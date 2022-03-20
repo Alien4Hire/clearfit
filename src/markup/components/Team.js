@@ -15,7 +15,7 @@ const Team = () => {
                     <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt="" /></div>
                     <div class="content">
                         <div class="designation">Sales</div>
-                        <h3>Velavos H. DesuJa</h3>
+                        <h3>Jen Macdonald</h3>
                         <ul class="social-links">
                             <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                             <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>

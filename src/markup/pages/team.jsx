@@ -12,7 +12,7 @@ class Team extends Component {
     render() {
         return (
             <>
-                <Header/>
+                <Header />
 
 
                 {/* <!--Search Popup--> */}
@@ -25,11 +25,11 @@ class Team extends Component {
                                 <div class="form-group">
                                     <fieldset>
                                         <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required />
-                                        <input type="submit" value="Search Now!" class="theme-btn"/>
+                                        <input type="submit" value="Search Now!" class="theme-btn" />
                                     </fieldset>
                                 </div>
                             </form>
-                            <br/>
+                            <br />
                             <h3>Recent Search Keywords</h3>
                             <ul class="recent-searches">
                                 <li><Link to={'/#'}>Finance</Link></li>
@@ -39,10 +39,10 @@ class Team extends Component {
                                 <li><Link to={'/#'}>Plan</Link></li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
                 {/* <!-- Page Banner Section --> */}
                 <section class="page-banner">
                     <div className="page-banner-bg" style={{ backgroundImage: "url(" + aboutbg + ")" }}></div>
@@ -109,7 +109,7 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-1.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-1.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Founder</div>
                                         <h3>Rosalina D. William</h3>
@@ -125,10 +125,10 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">CEO</div>
-                                        <h3>Velavos H. DesuJa</h3>
+                                        <h3>Jen Macdonald</h3>
                                         <ul class="social-links">
                                             <li><Link to={'/#'}><span class="fab fa-facebook-f"></span></Link></li>
                                             <li><Link to={'/#'}><span class="fab fa-twitter"></span></Link></li>
@@ -141,7 +141,7 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-3.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-3.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Developer</div>
                                         <h3>Abdur Rahman J.</h3>
@@ -157,7 +157,7 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-4.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-4.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Founder</div>
                                         <h3>Kerela Browni Kil</h3>
@@ -173,7 +173,7 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-5.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-5.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Web Developer</div>
                                         <h3>Hilix D. Brownni</h3>
@@ -189,7 +189,7 @@ class Team extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-6.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-6.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Designer</div>
                                         <h3>Jaruwani Maroni</h3>
@@ -208,7 +208,7 @@ class Team extends Component {
 
                 {/* <!-- Case Studies --> */}
                 <section class="cases-section">
-                            
+
                     {/* <!--case Tabs--> */}
                     <div class="case-tabs">
                         <div class="auto-container">
@@ -235,103 +235,7 @@ class Team extends Component {
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
-                                                    <div class="overlay">
-                                                        <div>
-                                                            <h5>Business Consultancy</h5>
-                                                            <h2>Brixer Donald Company Business</h2>
-                                                            <div class="link-btn flex-box">
-                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
-                                                            </div>
-                                                        </div>                                          
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    {/* <!--case Tab--> */}
-                                    <div class="case-tab" id="case-tab-2">
-                                        <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
-                                            {/* <!-- case Blokc One --> */}
-                                            <div class="case-block-one">
-                                                <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -346,7 +250,7 @@ class Team extends Component {
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -354,14 +258,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -369,14 +273,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -384,14 +288,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -399,14 +303,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -414,7 +318,103 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* <!--case Tab--> */}
+                                    <div class="case-tab" id="case-tab-2">
+                                        <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <!-- case Blokc One --> */}
+                                            <div class="case-block-one">
+                                                <div class="inner-box">
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
+                                                    <div class="overlay">
+                                                        <div>
+                                                            <h5>Business Consultancy</h5>
+                                                            <h2>Brixer Donald Company Business</h2>
+                                                            <div class="link-btn flex-box">
+                                                                <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -427,7 +427,7 @@ class Team extends Component {
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -435,14 +435,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -450,14 +450,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -465,14 +465,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -480,14 +480,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -495,14 +495,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -510,7 +510,7 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -523,7 +523,7 @@ class Team extends Component {
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -531,14 +531,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -546,14 +546,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -561,14 +561,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -576,14 +576,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -591,14 +591,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -606,7 +606,7 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -619,7 +619,7 @@ class Team extends Component {
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -627,14 +627,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -642,14 +642,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -657,14 +657,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-24.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -672,14 +672,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-25.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -687,14 +687,14 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             {/* <!-- case Blokc One --> */}
                                             <div class="case-block-one">
                                                 <div class="inner-box">
-                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/gallery/gallery-26.jpg')} alt="" /></div>
                                                     <div class="overlay">
                                                         <div>
                                                             <h5>Business Consultancy</h5>
@@ -702,7 +702,7 @@ class Team extends Component {
                                                             <div class="link-btn flex-box">
                                                                 <Link to={'/assets/images/gallery/gallery-24.jpg'} data-fancybox="gallery-1" data-caption="" class="theme-btn"><i>+</i></Link>
                                                             </div>
-                                                        </div>                                          
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -711,7 +711,7 @@ class Team extends Component {
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
                 </section>
 
@@ -720,7 +720,7 @@ class Team extends Component {
 
 
 
-                <Footer/>
+                <Footer />
             </>
         )
     }

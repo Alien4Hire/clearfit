@@ -21,7 +21,7 @@ class Onepage extends Component {
     render() {
         return (
             <>
-                <Header5/>
+                <Header5 />
 
                 {/* <!--Search Popup--> */}
                 <div id="search-popup" class="search-popup">
@@ -33,11 +33,11 @@ class Onepage extends Component {
                                 <div class="form-group">
                                     <fieldset>
                                         <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required />
-                                        <input type="submit" value="Search Now!" class="theme-btn"/>
+                                        <input type="submit" value="Search Now!" class="theme-btn" />
                                     </fieldset>
                                 </div>
                             </form>
-                            <br/>
+                            <br />
                             <h3>Recent Search Keywords</h3>
                             <ul class="recent-searches">
                                 <li><Link to={'/#'}>Finance</Link></li>
@@ -47,12 +47,12 @@ class Onepage extends Component {
                                 <li><Link to={'/#'}>Plan</Link></li>
                             </ul>
                         </div>
-                        
+
                     </div>
                 </div>
 
                 <HomeSlider1 />
-                
+
 
                 {/* <!-- Welcome Setion --> */}
                 <section class="welcome-section pt-0">
@@ -90,7 +90,7 @@ class Onepage extends Component {
                         </div>
                     </div>
                 </section>
-                
+
                 {/* <!-- About Section --> */}
                 <section class="about-section" id="about">
                     <div class="auto-container">
@@ -98,11 +98,11 @@ class Onepage extends Component {
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
                                     <div class="image-one">
-                                        <img  src={require('../../assets/images/resource/image-2.jpg')}  alt=""/>
+                                        <img src={require('../../assets/images/resource/image-2.jpg')} alt="" />
                                     </div>
                                     <div class="image-two wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                         <div class="caption">F.</div>
-                                        <div class="image-outer"><img  src={require('../../assets/images/resource/image-3.jpg')}  alt=""/></div>
+                                        <div class="image-outer"><img src={require('../../assets/images/resource/image-3.jpg')} alt="" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -110,26 +110,26 @@ class Onepage extends Component {
                                 <div class="content-box">
                                     <div class="sec-title">
                                         <div class="sub-title">About Us</div>
-                                        <h2>We Work With <br/>You To Address</h2>
+                                        <h2>We Work With <br />You To Address</h2>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
                                     </div>
                                     <div class="row">
                                         <div class="info-column col-md-6">
                                             <div class="icon-box">
-                                                <div class="icon"><img src={require('../../assets/images/icons/icon-1.png')} alt=""/></div>
+                                                <div class="icon"><img src={require('../../assets/images/icons/icon-1.png')} alt="" /></div>
                                                 <h5>Phone Number</h5>
                                                 <h2>+897 6765 754</h2>
                                             </div>
                                         </div>
                                         <div class="info-column col-md-6">
                                             <div class="icon-box">
-                                                <div class="icon"><img src={require('../../assets/images/icons/icon-2.png')} alt=""/></div>
+                                                <div class="icon"><img src={require('../../assets/images/icons/icon-2.png')} alt="" /></div>
                                                 <h5>Email Address</h5>
                                                 <h2>info@webmail.com</h2>
                                             </div>
                                         </div>
                                     </div>
-                                            
+
                                 </div>
                             </div>
                         </div>
@@ -144,24 +144,24 @@ class Onepage extends Component {
                                 <div class="services-content">
                                     <div class="sec-title light">
                                         <div class="sub-title">Our Services</div>
-                                        <h2>What Actually We <br/>Do Here.</h2>
+                                        <h2>What Actually We <br />Do Here.</h2>
                                     </div>
                                     <div class="icon-box">
-                                        <div class="icon wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/icons/icon-3.png')} alt=""/></div>
+                                        <div class="icon wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/icons/icon-3.png')} alt="" /></div>
                                         <h2>Capital Market</h2>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                                     </div>
                                     <div class="icon-box">
-                                        <div class="icon wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/icons/icon-4.png')} alt=""/></div>
+                                        <div class="icon wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/icons/icon-4.png')} alt="" /></div>
                                         <h2>Insurance & Planning</h2>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                                     </div>
                                     <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                                        <div class="icon"><img src={require('../../assets/images/icons/icon-5.png')} alt=""/></div>
+                                        <div class="icon"><img src={require('../../assets/images/icons/icon-5.png')} alt="" /></div>
                                         <h2>Financial Strategy</h2>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
                                     </div>
-                                </div>                        
+                                </div>
                             </div>
                             <div class="right-column">
                                 {/* <!-- Fact Counter --> */}
@@ -333,12 +333,12 @@ class Onepage extends Component {
                                 </div>
                                 <div class="author-box" style={{ backgroundImage: "url(" + authorbg1 + ")" }}>
                                     <div class="author-info">
-                                        <div class="author-thumb"><img src={require('../../assets/images/resource/author-1.jpg')} alt=""/></div>
+                                        <div class="author-thumb"><img src={require('../../assets/images/resource/author-1.jpg')} alt="" /></div>
                                         <h2>Rosalina D. William</h2>
                                         <div class="designation">Founder</div>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod..</div>
                                     </div>
-                                    <div class="signature"><img src={require('../../assets/images/resource/signature.png')} alt=""/></div>
+                                    <div class="signature"><img src={require('../../assets/images/resource/signature.png')} alt="" /></div>
                                 </div>
                             </div>
                         </div>
@@ -349,25 +349,25 @@ class Onepage extends Component {
                 <PortfolioFilter1 />
 
                 {/* <!-- Video Section --> */}
-                <VideoPopup1/>
+                <VideoPopup1 />
 
                 {/* <!-- Why Choose Us Section --> */}
                 <section class="why-chooseus-section">
                     <div class="auto-container">
-                        <div class="row align-items-center">                
+                        <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="content-box">
                                     <div class="sec-title">
                                         <div class="sub-title">Why Choose Us</div>
-                                        <h2>Why Should You <br/>Choose Us ?</h2>
+                                        <h2>Why Should You <br />Choose Us ?</h2>
                                     </div>
                                     <Tab.Container defaultActiveKey="first">
                                         <Nav variant="pills" className="nav nav-tabs tab-btn-style-one">
                                             <Nav.Item>
-                                                <Nav.Link  eventKey="first"><span>Our Mission</span></Nav.Link>
+                                                <Nav.Link eventKey="first"><span>Our Mission</span></Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
-                                                <Nav.Link  eventKey="second"><span>Our Vission</span></Nav.Link>
+                                                <Nav.Link eventKey="second"><span>Our Vission</span></Nav.Link>
                                             </Nav.Item>
                                             <Nav.Item>
                                                 <Nav.Link eventKey="third"><span>Our Value</span></Nav.Link>
@@ -376,21 +376,21 @@ class Onepage extends Component {
                                         <Tab.Content className="tabs-content">
                                             <Tab.Pane eventKey="first" className="fadeInUp animated">
                                                 <div class="clearfix">
-                                                    <div class="image"><img  src={require('../../assets/images/resource/image-4.jpg')}  alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/resource/image-4.jpg')} alt="" /></div>
                                                     <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim ad minim veni am, quis nostrud exercitation ullamco.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error</p></div>
-                                                </div>                                              
+                                                </div>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="second" className="fadeInUp animated">
                                                 <div class="clearfix">
-                                                    <div class="image"><img  src={require('../../assets/images/resource/image-4.jpg')}  alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/resource/image-4.jpg')} alt="" /></div>
                                                     <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim ad minim veni am, quis nostrud exercitation ullamco.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error</p></div>
-                                                </div>                                            
+                                                </div>
                                             </Tab.Pane>
                                             <Tab.Pane eventKey="third" className="fadeInUp animated">
                                                 <div class="clearfix">
-                                                    <div class="image"><img  src={require('../../assets/images/resource/image-4.jpg')}  alt=""/></div>
+                                                    <div class="image"><img src={require('../../assets/images/resource/image-4.jpg')} alt="" /></div>
                                                     <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipisici ng elit, sed do eiusmod tempor incididunt ut labo re et dolore magna aliqua. Ut enim ad minim veni am, quis nostrud exercitation ullamco.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error</p></div>
-                                                </div>                                               
+                                                </div>
                                             </Tab.Pane>
                                         </Tab.Content>
                                     </Tab.Container>
@@ -398,8 +398,8 @@ class Onepage extends Component {
                             </div>
                             <div class="col-lg-6">
                                 <div class="image-wrapper">
-                                    <div class="image-one"><img src={require('../../assets/images/resource/image-6.jpg')} alt=""/></div>
-                                    <div class="image-two"><img src={require('../../assets/images/resource/image-5.jpg')} alt=""/></div>
+                                    <div class="image-one"><img src={require('../../assets/images/resource/image-6.jpg')} alt="" /></div>
+                                    <div class="image-two"><img src={require('../../assets/images/resource/image-5.jpg')} alt="" /></div>
                                 </div>
                             </div>
                         </div>
@@ -417,7 +417,7 @@ class Onepage extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-1.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-1.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Founder</div>
                                         <h3>Rosalina D. William</h3>
@@ -428,10 +428,10 @@ class Onepage extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">CEO</div>
-                                        <h3>Velavos H. DesuJa</h3>
+                                        <h3>Jen Macdonald</h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                     </div>
                                 </div>
@@ -439,7 +439,7 @@ class Onepage extends Component {
                             {/* <!-- Team Block One --> */}
                             <div class="col-lg-4 team-block-one wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                                 <div class="inner-box">
-                                    <div class="image"><img src={require('../../assets/images/resource/team-3.jpg')} alt=""/></div>
+                                    <div class="image"><img src={require('../../assets/images/resource/team-3.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">Developer</div>
                                         <h3>Abdur Rahman J.</h3>
@@ -463,25 +463,25 @@ class Onepage extends Component {
                                 {/* <!-- Contact Form--> */}
                                 <div class="contact-form">
                                     <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
-                                        <div class="row clearfix">                                    
+                                        <div class="row clearfix">
                                             <div class="col-md-12 form-group">
                                                 <label for="name">Enter your name</label>
-                                                <input type="text" name="username" id="name" placeholder="Enter name here......" required=""/>
+                                                <input type="text" name="username" id="name" placeholder="Enter name here......" required="" />
                                                 <i class="fas fa-user"></i>
                                             </div>
-                                            
+
                                             <div class="col-md-12 form-group">
                                                 <label for="email">Enter your email</label>
-                                                <input type="email" name="email" id="email" placeholder="Enter email here......" required=""/>
+                                                <input type="email" name="email" id="email" placeholder="Enter email here......" required="" />
                                                 <i class="fas fa-envelope"></i>
                                             </div>
-                    
+
                                             <div class="col-md-12 form-group">
                                                 <label for="message">Enter your message</label>
                                                 <textarea name="message" id="message" placeholder="Enter message here......"></textarea>
                                                 <i class="fas fa-edit"></i>
                                             </div>
-                    
+
                                             <div class="col-md-12 form-group">
                                                 <button class="theme-btn btn-style-one" type="submit" name="submit-form"><span class="btn-title">Get In Touch</span></button>
                                             </div>
@@ -525,7 +525,7 @@ class Onepage extends Component {
                                                 <div class="icon"><span class="flaticon-location"></span></div>
                                                 <h3>Office Address</h3>
                                                 <ul>
-                                                    <li>12/A, Romania City Town Hall <br/>New Joursey, UK</li>
+                                                    <li>12/A, Romania City Town Hall <br />New Joursey, UK</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -540,10 +540,10 @@ class Onepage extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                </div>                        
+                                </div>
                             </div>
                         </div>
-                                
+
                     </div>
                 </section>
 
@@ -559,14 +559,14 @@ class Onepage extends Component {
                             {/* <!-- News Block One --> */}
                             <div class="news-block-one col-lg-4">
                                 <div class="inner-box">
-                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-1.jpg')} alt=""/></Link></div>
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-1.jpg')} alt="" /></Link></div>
                                     <div class="lower-content">
                                         <div class="category">Business</div>
                                         <ul class="post-meta">
                                             <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>24th March 2020</Link></li>
                                             <li><Link to={'/#'}><i class="far fa-user"></i>By Admin</Link></li>
                                         </ul>
-                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br/>business & make noise.</Link></h3>
+                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br />business & make noise.</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore</div>
                                     </div>
                                 </div>
@@ -574,14 +574,14 @@ class Onepage extends Component {
                             {/* <!-- News Block One --> */}
                             <div class="news-block-one col-lg-4">
                                 <div class="inner-box">
-                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-2.jpg')} alt=""/></Link></div>
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-2.jpg')} alt="" /></Link></div>
                                     <div class="lower-content">
                                         <div class="category">Business</div>
                                         <ul class="post-meta">
                                             <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>26th March 2020</Link></li>
                                             <li><Link to={'/#'}><i class="far fa-user"></i>By Admin</Link></li>
                                         </ul>
-                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br/>business & make noise.</Link></h3>
+                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br />business & make noise.</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore</div>
                                     </div>
                                 </div>
@@ -589,14 +589,14 @@ class Onepage extends Component {
                             {/* <!-- News Block One --> */}
                             <div class="news-block-one col-lg-4">
                                 <div class="inner-box">
-                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-3.jpg')} alt=""/></Link></div>
+                                    <div class="image"><Link to={'/#'}><img src={require('../../assets/images/resource/news-3.jpg')} alt="" /></Link></div>
                                     <div class="lower-content">
                                         <div class="category">Business</div>
                                         <ul class="post-meta">
                                             <li><Link to={'/#'}><i class="far fa-calendar-alt"></i>28th March 2020</Link></li>
                                             <li><Link to={'/#'}><i class="far fa-user"></i>By Admin</Link></li>
                                         </ul>
-                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br/>business & make noise.</Link></h3>
+                                        <h3><Link to={'/blog-details'}>UX is best solution for your <br />business & make noise.</Link></h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectet ur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore</div>
                                     </div>
                                 </div>
@@ -616,29 +616,29 @@ class Onepage extends Component {
                         <div class="award-image">
                             <div class="row align-items-center">
                                 <div class="col-lg-4">
-                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-1.png')} alt=""/></div>
-                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-2.png')} alt=""/></div>
+                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-1.png')} alt="" /></div>
+                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-2.png')} alt="" /></div>
                                 </div>
                                 <div class="col-lg-4 order-lg-2">
-                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-3.png')} alt=""/></div>
-                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-4.png')} alt=""/></div>
+                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-3.png')} alt="" /></div>
+                                    <div class="image wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-4.png')} alt="" /></div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="image wow zoomIn" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-5.png')} alt=""/></div>
+                                    <div class="image wow zoomIn" data-wow-delay="200ms" data-wow-duration="1200ms"><img src={require('../../assets/images/resource/award-5.png')} alt="" /></div>
                                 </div>
-                                
+
                             </div>
-                        </div>                
+                        </div>
                         <div class="feature-image">
-                            <div class="image-one"><img src={require('../../assets/images/resource/image-7.jpg')} alt=""/></div>
-                            <div class="image-two"><img src={require('../../assets/images/resource/image-8.jpg')} alt=""/></div>
-                            <div class="image-three"><img src={require('../../assets/images/resource/image-9.jpg')} alt=""/></div>
+                            <div class="image-one"><img src={require('../../assets/images/resource/image-7.jpg')} alt="" /></div>
+                            <div class="image-two"><img src={require('../../assets/images/resource/image-8.jpg')} alt="" /></div>
+                            <div class="image-three"><img src={require('../../assets/images/resource/image-9.jpg')} alt="" /></div>
                         </div>
                     </div>
                 </section>
 
 
-                <Footer/>
+                <Footer />
             </>
         )
     }

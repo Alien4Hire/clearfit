@@ -445,7 +445,7 @@ class Index extends Component {
                                     <div class="image"><img src={require('../../assets/images/resource/team-2.jpg')} alt="" /></div>
                                     <div class="content">
                                         <div class="designation">CEO</div>
-                                        <h3>Velavos H. DesuJa</h3>
+                                        <h3>Jen Macdonald</h3>
                                         <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
                                     </div>
                                 </div>
