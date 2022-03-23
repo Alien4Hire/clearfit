@@ -18,8 +18,8 @@ const Testimonial1_content = [
     },
     {
         thumb: require('./../../assets/images/resource/thumb-2.jpg'),
-        author: 'Adam Harn',
-        designation: 'Founder, Resolute',
+        author: 'Adam Rosen',
+        designation: 'Founder, RosenUS',
         title: 'Amazing Team',
         description:
             'thank you Clear Fit tech. for this amazing experience. I made a mobile application for my small business employees and management are so flexible to work with. I really appreciate your business. ',
