@@ -1,0 +1,151 @@
+
+/* consulting Style */
+.hero-section{
+    background-color: #0eaf96;
+    height: 811px;
+    width: 100%;
+}
+.hero-section{
+    background-image: url(./../images/background/consultingbg.png);
+    color: #FFFFFF;
+}
+.opacity-container{
+    background-image: url(./../images/background/overlay.png);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 811px;
+    opacity: 1;
+    width: 100%;
+}
+.hero-section h1{
+    font-weight: 600;
+    font-size: 74px;
+    text-align: center;
+}
+.call-to-action-btn{
+    background: linear-gradient(96.73deg, #C1292A 27.66%, #D0631A 85.99%);
+    box-shadow: 0px 4px 4px 0px #000000A6;
+    border-radius: 100px;
+    padding: 3px 45px 3px 45px;
+    color: white;
+    font-weight: 600;
+}
+.clients{
+    padding: 60px;
+    align-items: center;
+    justify-content: space-around;
+}
+.clients-text{
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 500;
+    line-height: 35.16px;
+    font-size: 30px;
+}
+.life-headline{
+    background: linear-gradient(95.56deg, #C1292A 31.52%, #D0631A 90.12%);
+    text-align: center;
+    color: white;
+    padding: 50px 0 50px 0;
+}
+.life-headline h1{
+    line-height: 98px;
+    font-style: normal;
+    font-weight: 700;
+    transform: scale(2,1.6);
+    /* font-size: 64px; */
+}
+.life-headline p{
+    line-height: 30px;
+}
+.life-headline h6{
+    line-height: 28px;
+}
+.who-we-are{
+    background: #282828;
+    color: red;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 50px 0;
+}
+.who-we-are h1{
+    color: white;
+    line-height: 60px;
+    font-weight: 500;
+    padding: 20px 0px 30px 150px;
+}
+hr{
+    height: 4px;
+    width: 150px;
+    background-color: red;
+    box-shadow: 0px 7px 17px 4px #282828;
+}
+.btn{
+    background-color: #0eaf96;
+}
+.btn-center{
+    padding-top: 30px;
+   align-items: center;
+   justify-content: center;
+}
+.work-hero-section{
+    background-color: #0eaf96;
+    height: 811px;
+    width: 100%;
+    background-image: url(./../images/background/howWork.png);
+    color: #282828;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    padding:10px 160px 0px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+}
+.content{
+    transform: translateY(25%);
+}
+.work-hero-section h1{
+    font-weight: 600;
+    font-size: 64px;
+    padding-bottom: 30px;
+}
+
+.work-hero-section-btns button{
+    margin-left: 45px;
+    margin-top: 30px;
+}
+.hr-div{
+    color: red;
+    font-weight: 600;
+}
+.customers-hero-section{
+    background-image: url(./../images/background/customers-bg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 792px;
+    padding-top: 20px;
+    text-align: center;
+}
+.customers-hero-section h1{
+    font-weight: 600;
+    line-height: 99px;
+    font-size:60px;
+    color: white;
+}
+.customers-opacity-container{
+
+}
+.customers-card{
+    background-color: #000000A6;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    background: #282828;
+    padding: 50px;
+}
