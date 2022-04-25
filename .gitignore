@@ -6,3 +6,4 @@ env
 .env.development
 config
 config.js
+__MACOSX
