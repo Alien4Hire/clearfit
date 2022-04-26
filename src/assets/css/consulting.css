@@ -23,7 +23,7 @@
   font-weight: 600;
   font-size: 74px;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .call-to-action-btn {
   background: linear-gradient(96.73deg, #c1292a 27.66%, #d0631a 85.99%);
@@ -33,8 +33,6 @@
   color: white;
   font-weight: 600;
 }
-
-/* Clients */
 .clients {
   padding: 60px;
   align-items: center;
@@ -47,8 +45,6 @@
   font-size: 30px;
   width: 7%;
 }
-
-/* Life Headline Section */
 .life-headline {
   background: linear-gradient(95.56deg, #c1292a 31.52%, #d0631a 90.12%);
   text-align: center;
@@ -60,7 +56,8 @@
   font-style: normal;
   font-weight: 700;
   transform: scale(2, 1.6);
- }
+  /* font-size: 64px; */
+}
 .life-headline p {
   line-height: 30px;
   width: 23%;
@@ -70,8 +67,6 @@
 .life-headline h6 {
   line-height: 28px;
 }
-
-/* Who we are section */
 .who-we-are {
   background: #282828;
   color: red;
@@ -86,23 +81,12 @@
   font-weight: 500;
   padding: 20px 0px 30px 150px;
 }
-
-/* Hr tag */
-.hr-div p {
-  background: linear-gradient(92.92deg, #c1292a, #d0631a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: #0eaf96;
-}
 hr {
   height: 4px;
   width: 150px;
   background-color: red;
   box-shadow: 0px 7px 17px 4px #282828;
 }
-
 .btn {
   background-color: #0eaf96;
 }
@@ -111,20 +95,21 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
-/* How to work with us Section */
 .work-hero-section {
+  background-color: #0eaf96;
   min-height: 811px;
   background-image: url(./../images/background/howWork.png);
   color: #282828;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: right;
+  padding: 10px 160px 0px 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  display: flex;
 }
 .content {
   transform: translateY(25%);
-  margin-left: auto;
-  margin-right: 150px;
 }
 .work-hero-section h1 {
   font-weight: 600;
@@ -136,8 +121,15 @@ hr {
   margin-left: 45px;
   margin-top: 30px;
 }
-
-/* Customers Section */
+.hr-div p {
+  background: linear-gradient(92.92deg, #c1292a, #d0631a);
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #0eaf96;
+}
 .customers-hero-section {
   background-image: url(./../images/background/customers-bg.png);
   background-attachment: fixed;
@@ -158,9 +150,7 @@ hr {
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
-  /* background-color: #0eaf96; */
 }
-
 .card {
   background: #282828 !important;
   padding: 0px 31px 5px 20px;
@@ -173,13 +163,16 @@ hr {
 }
 .card h1 {
   font-size: 30px;
-  background: linear-gradient(94.29deg,#c1292a 19.15%,#d0631a 54.03%); /* background: -webkit-linear-gradient(#eee, #333); */
+  background: linear-gradient(
+    94.29deg,
+    #c1292a 19.15%,
+    #d0631a 54.03%
+  ); /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-weight: 600;
 }
-
 .profile {
   background: rgba(0, 0, 0, 0.76);
   width: 230px;
@@ -205,8 +198,6 @@ hr {
   width: 100%;
   padding: 10px 0px 0px 0px;
 }
-
-/* FAQ section */
 .FAQ {
   background-image: url(./../images/background/faq-bg.png);
   min-height: 651px;
@@ -234,11 +225,10 @@ details > summary {
 summary:active,
 summary:focus {
   background: linear-gradient(92.92deg, #c1292a, #d0631a);
+  /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-/* Schedule Section */
 .schedule {
   background: linear-gradient(95.56deg, #c1292a 31.52%, #d0631a 90.12%);
   text-align: center;
@@ -246,6 +236,7 @@ summary:focus {
   padding: 50px 0 50px 0;
 }
 .schedule-main {
+  /* background-color: #0eaf96; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -278,13 +269,14 @@ summary:focus {
 }
 .from {
   background: #282828;
+  border-radius: 10px;
   align-items: center;
   text-align: left;
   padding: 5px 0px 5px 0px;
   border-radius: 10px;
   color: white;
   margin-right: 30px;
- }
+}
 .from p {
   margin: 0;
 }
@@ -297,41 +289,6 @@ summary:focus {
   padding: 5px 30px 5px 30px;
   margin-top: 30px;
 }
-/* DatePicker */
-.sdp--text {
-  color: black;
-}
-.sdp {
-  background: #282828 !important;
-  width: 22rem !important;
-  min-height: 25rem !important;
-}
-.sdp--square-btn {
-  background: #282828 !important;
-}
-.sdp--text {
-  color: white;
-}
-.sdp--dates-grid {
-  gap: 22px !important;
-}
- .sdp--square-btn:focus{
-  box-shadow: 0 0 0 2px #ffffffb3 !important;
-  color: black;
-  background-color: white !important;
-}
-
-input[type="date"] {
-  padding: 3px 10px 3px 10px;
-  background: #282828;
-  display: none;
-  color: white;
-}
-.select-heading h5:nth-child(1){
-  display: none;
-}
-
-/* Final call section */
 .final-call {
   background: #282828;
   height: 461px;
@@ -369,8 +326,6 @@ input[type="date"] {
   font-size: 20px;
   margin-left: 30px;
 }
-
-/* Social Section */
 .social {
   color: white;
   background: #000000;
@@ -386,8 +341,6 @@ input[type="date"] {
 ul li {
   margin-left: 20px;
 }
-
-/* Footer */
 footer {
   background: #282828;
   color: white;
@@ -404,6 +357,7 @@ footer {
 .left-content {
   min-height: 400px;
   width: 17%;
+  /* background-color: #D0631A; */
 }
 .left-content h4 {
   font-weight: 600;
@@ -469,22 +423,27 @@ footer {
   font-size: 18px;
   line-height: 60px;
 }
-
-.card-main{
-  display: block;
+/* DatePicker */
+.sdp--text {
+  color: black;
 }
-.mob-slider{
-  display: none;
+.sdp {
+  background: #282828 !important;
+  width: 22rem !important;
+  height: 25rem !important;
+}
+.sdp--square-btn {
+  background: #282828 !important;
+}
+.sdp--text {
+  color: white;
+}
+.sdp--dates-grid {
+  gap: 22px !important;
 }
 
 /* Media Queries Mobile responsiveness */
 @media only screen and (max-width: 426px) {
-  .mob-slider{
-    display: block;
-  }
-  .web-card-view{
-    display: none;
-  }
   .clients {
     flex-direction: column;
     padding: 30px;
@@ -511,7 +470,6 @@ footer {
   hr {
     width: 40px;
   }
-
   .hr-div p {
     font-size: 17px;
   }
@@ -519,25 +477,14 @@ footer {
     font-size: 34px;
     padding-bottom: 30px;
   }
-  .work-hero-section {
-    padding: 20px 0px 0px 0px;
-    min-height: 750px;
-    background-size: 146% 100%;
-  }
   .content {
-    transform: translateY(3%);
-    margin-left: auto;
-
-    margin-right: 0px;
+    transform: translateY(5%);
   }
   .customers-hero-section h1 {
     font-size: 35px;
   }
   .card {
-    width: 100%;
-  }
-  .card-main{
-    display: none;
+    width: 300px;
   }
   .customers-cards {
     flex-direction: column;
@@ -618,7 +565,13 @@ footer {
   .images-main {
     width: 80%;
   }
-
+  .work-hero-section {
+    padding: 10px 90px 0px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    min-height: 700px;
+  }
   .work-hero-section-btns {
     display: flex;
     justify-content: space-between;
@@ -626,6 +579,9 @@ footer {
   .work-hero-section-btns button {
     margin-left: 0;
     padding: 5px 30px 5px 30px;
+  }
+  .content {
+    margin-top: 20px;
   }
   details {
     width: 400px;
@@ -636,71 +592,4 @@ footer {
   .sdp {
     margin-top: 50px;
   }
-  input[type="date"] {
-    display: block;
-  }
-  .sdp {
-    display: none;
-  }
-  .from-to{
-    flex-wrap: wrap;
-    align-items: flex-start !important;
-    justify-content: right !important;
-  }
-  .from{
-    font-size: 3px;
-    margin-right: 0;
-    padding: 1px 1px 5px 1px;
-    }
-    .from p{
-      font-size: 14px;
-    }
-    .from h6{
-      font-size: 12px;
-    }
-    .to{
-      margin-top: 15px;
-    }
-  .schedule-right{
-    padding-right: 34px !important;
-    padding-left: 9px !important;
-  }
-  input[type="date"] {
-    padding: 1px 1px 5px 1px;
-    align-items: center;
-    text-align: left;
-    padding: 9px 8px 9px 8px;
-    border-radius: 10px;
-    margin-right: 20px;
-  }
-  ::-webkit-calendar-picker-indicator {
-    filter: invert(1);
-}
-  .select-heading{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 94%;
-    color: white;
-  }
-  .select-heading h5:nth-child(1){
-    display: block;
-  }
-  .FAQ{
-    min-height: 570px;
-  }
-  .final-call{
-    height: 350px;
-  }
-  .final-call-content {
-    
-    transform: translateY(5%);
-}
-.social-links{
-  margin-left: 0px;
-}
-/* slider btns */
-.slick-prev, .slick-next {
-  margin-top: -58px;
-}
 }
