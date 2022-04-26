@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 // Date Picker
 import DatePicker from 'sassy-datepicker';
+//  Slider
+
+import Slider from "react-slick";
 
 
 const onChange = (date) => {
@@ -13,11 +16,18 @@ const onChange = (date) => {
 export default class Consulting extends Component {
   
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
  
     return (
       <>
-        <section class="hero-section">
-          <div class="opacity-container">
+        <section className="hero-section">
+          <div className="opacity-container">
             <p>Build Your Business Better</p>
             <h1>BIG. HEADING. HERE</h1>
             <p>
@@ -26,12 +36,14 @@ export default class Consulting extends Component {
               functionalities performed very well. Their work methodology was
               top-notch and...
             </p>
-            <button type="button" class="call-to-action-btn">
+            <button type="button" className="call-to-action-btn">
               CALL TO ACTION
             </button>
           </div>
         </section>
-        <section class="clients  d-flex">
+
+        {/*  Clients  */}
+        <section className="clients  d-flex">
           <div className="clients-text ">
             Our Awesome Clients
           </div>
@@ -69,11 +81,11 @@ export default class Consulting extends Component {
             </button>
           </div>
         </section>
-        <section class="work-hero-section d-flex">
+        <section className="work-hero-section ">
           <div className="hr-div d-flex">
             <hr /> <p> How We Help</p>
           </div>
-          <div className="col-lg-5 col-12  content">
+          <div className="col-lg-5 col-9  content">
             <h1>
               how to <br /> work with us
             </h1>
@@ -90,16 +102,18 @@ export default class Consulting extends Component {
               money-back guarantee backs every single consultation.
             </p>
             <div className="work-hero-section-btns">
-              <button type="button" class="call-to-action-btn">
+              <button type="button" className="call-to-action-btn">
                 VIRTUAL
               </button>
-              <button type="button" class="call-to-action-btn">
+              <button type="button" className="call-to-action-btn">
                 IN-PERSON
               </button>
             </div>
           </div>
         </section>
-        <section class="customers-hero-section">
+
+        {/* Customers Section */}
+        <section className="customers-hero-section web-card-view">
           <div className="hr-div d-flex">
             <hr /> <p> Testimonials</p>
           </div>
@@ -174,7 +188,92 @@ export default class Consulting extends Component {
           </div>
         </section>
 
-        <section class="FAQ">
+
+
+      {/* Mobile view Slider */}
+        <section className="customers-hero-section mob-slider">
+          <div className="hr-div d-flex">
+            <hr /> <p> Testimonials</p>
+          </div>
+          <h1>what they’re saying</h1>
+          <div className="customers-cards col-10  d-flex">
+          <Slider {...settings}> 
+            <div className="card-main">
+              <div className="card">
+                <h1>Design Quality</h1>
+                <p>
+                  ClearFit Technologies was an excellent software development
+                  partner. The final mobile app was tested and all its
+                  functionalities performed very well. Their work methodology
+                  was top-notch and...
+                </p>
+              </div>
+              <div className="profile d-flex">
+                <img
+                  src={require("./../../assets/images/background/profile-pic.png")}
+                  className="rounded-circle"
+                  alt="Profile Pic"
+                />
+                <div className="profile-content">
+                  <h6>Scott McDonald</h6>
+                  <small>Project Manager, Fluttr</small>
+                </div>
+              </div>
+            </div>
+            <div className="card-main">
+              <div className="card">
+                <h1>Design Quality</h1>
+                <p>
+                  ClearFit Technologies was an excellent software development
+                  partner. The final mobile app was tested and all its
+                  functionalities performed very well. Their work methodology
+                  was top-notch and...
+                </p>
+              </div>
+              <div className="profile d-flex">
+                <img
+                  src={require("./../../assets/images/background/profile-pic.png")}
+                  className="rounded-circle"
+                  alt="Profile Pic"
+                />
+                <div className="profile-content">
+                  <h6>Scott McDonald</h6>
+                  <small>Project Manager, Fluttr</small>
+                </div>
+              </div>
+            </div>
+            <div className="card-main">
+              <div className="card">
+                <h1>Design Quality</h1>
+                <p>
+                  ClearFit Technologies was an excellent software development
+                  partner. The final mobile app was tested and all its
+                  functionalities performed very well. Their work methodology
+                  was top-notch and...
+                </p>
+              </div>
+              <div className="profile d-flex">
+                <img
+                  src={require("./../../assets/images/background/profile-pic.png")}
+                  className="rounded-circle"
+                  alt="Profile Pic"
+                />
+                <div className="profile-content">
+                  <h6>Scott McDonald</h6>
+                  <small>Project Manager, Fluttr</small>
+                </div>
+              </div>
+            </div>
+            </Slider>
+          </div>
+          
+        </section>
+
+
+
+
+
+        <section className="FAQ">
           <div className="hr-div d-flex ">
             <hr /> <p> Frequently Asked Questions</p>
           </div>
@@ -215,8 +314,7 @@ export default class Consulting extends Component {
             </details>
             <details>
               <summary>
-                Proin feugiat orci quis elit ornare volutpat. Maecenas
-                pellentesque turpis vel lacus condimentum?
+                Proin feugiat orci quis elit ornare volutpat?
               </summary>
             </details>
             <details>
@@ -250,13 +348,18 @@ export default class Consulting extends Component {
                 finibus. Integer tincidunt diam quis nunc blandit maximus.
               </p>
               <div className="select-time-main text-center">
+                <div className="select-heading">
+                <h5>SELECT A DATE</h5>
                 <h5>SELECT A TIME</h5>
+                </div>
                 <div className="from-to d-flex">
-                  <div className="from col-lg-4 col-sm-8">
+                
+                <input type="date" />
+                  <div className="from col-lg-4 col-6">
                     <p>From</p>
                     <h6>07:00 AM</h6>
                   </div>
-                  <div className="to from col-lg-4 col-sm-8">
+                  <div className="to from col-lg-4 col-6">
                     <p>To</p>
                     <h6>12:00 AM</h6>
                   </div>
@@ -286,7 +389,7 @@ export default class Consulting extends Component {
         <section className="social d-flex">
           <h5>Follow us on social</h5>
           <div className="social-icons">
-            <ul class="social-links d-flex">
+            <ul className="social-links d-flex">
               <li>
                 <Link to={"/#"}>
                   <img
