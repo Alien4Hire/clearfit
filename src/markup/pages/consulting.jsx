@@ -475,55 +475,55 @@ export default class Consulting extends Component {
             <div className="showcase ">
               <h4>PHOTO SHOWCASE</h4>
               <div className="images-main d-flex">
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-1.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-2.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-3.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-4.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-5.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-6.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-7.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-8.jpg")}
                     alt="showcase"
                   ></img>
                 </div>
-                <div className="image">
+                <div className="showcase-image">
                   <img
                     src={require("./../../assets/images/gallery/gallery-9.jpg")}
                     alt="showcase"
