@@ -30,7 +30,7 @@ import TeamDetails from './pages/team-details'
 import Team from './pages/team';
 import Testimonial1 from './element/testimonial1'
 import BackToTop from './layout/backToTop'
-import consulting from './pages/consulting';
+import Consulting from './pages/Consulting';
 
 const details = [
     {
@@ -185,7 +185,7 @@ class Router extends Component {
                             <Route path='/team-details' component={TeamDetails} />
                             <Route path='/team' component={Team} />
                             <Route path='/test' component={Testimonial1} />
-                            <Route path='/consulting' component={consulting}/>
+                            <Route path='/consulting' component={Consulting}/>
 
                         </Switch>
 
