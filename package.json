@@ -22,6 +22,7 @@
     "react-slick": "^0.25.2",
     "react-stickynode": "^3.0.2",
     "react-visibility-sensor": "^5.1.1",
+    "sassy-datepicker": "^0.8.0",
     "simple-react-google-maps": "^1.1.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3"
