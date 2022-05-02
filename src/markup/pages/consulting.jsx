@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import "./../../assets/css/consulting.css";
 import { Link } from "react-router-dom";
+
+import "./../../assets/css/consulting.css";
+import "./../../assets/css/color.css";
 
 // Date Picker
 import DatePicker from 'sassy-datepicker';
+
 //  Slider
-
 import Slider from "react-slick";
-
-
-const onChange = (date) => {
-  console.log(date.toString());
-}
+import Footerreused from "../layout/reusedFooter";
 
 export default class Consulting extends Component {
-  
+  onChange = (date) => {
+    console.log(date.toString());
+  }
   render() {
     const settings = {
       dots: true,
@@ -26,13 +26,14 @@ export default class Consulting extends Component {
  
     return (
       <>
+      {/* Hero Section */}
         <section className="hero-section">
           <div className="opacity-container">
             <p>Build Your Business Better</p>
             <h1>BIG. HEADING. HERE</h1>
-            <p>
+            <p className="paragraph">
               ClearFit Technologies was an excellent software development
-              partner. The final mobile app was tested <br /> and all its
+              partner. The final mobile app was tested and all its
               functionalities performed very well. Their work methodology was
               top-notch and...
             </p>
@@ -42,7 +43,7 @@ export default class Consulting extends Component {
           </div>
         </section>
 
-        {/*  Clients  */}
+        {/*  Clients Section  */}
         <section className="clients  d-flex">
           <div className="clients-text ">
             Our Awesome Clients
@@ -54,6 +55,8 @@ export default class Consulting extends Component {
             />
           </div>
         </section>
+
+        {/* Life Headline section */}
         <section className="life-headline">
           <h1>Life Changing Headline</h1>
           <p>
@@ -62,8 +65,10 @@ export default class Consulting extends Component {
             performed very well. Their work methodology was top-
             notch and...
           </p>
-          <h6>H4 Headline Here</h6>
+          <h4>H4 Headline Here</h4>
         </section>
+
+        {/* Who we are section */}
         <section className="who-we-are ">
           <div className="hr-div d-flex">
             <hr />
@@ -81,11 +86,13 @@ export default class Consulting extends Component {
             </button>
           </div>
         </section>
+
+        {/* Work-Hero-Section */}
         <section className="work-hero-section ">
           <div className="hr-div d-flex">
             <hr /> <p> How We Help</p>
           </div>
-          <div className="col-lg-5 col-9  content">
+          <div className="col-lg-5 col-9 work-content">
             <h1>
               how to <br /> work with us
             </h1>
@@ -101,7 +108,8 @@ export default class Consulting extends Component {
               you’re unsure which option works best. By the way, a 100%
               money-back guarantee backs every single consultation.
             </p>
-            <div className="work-hero-section-btns">
+          </div>
+          <div className="work-hero-section-btns col-lg-4 col-md-6 col-sm-9 col-9 col-xs-12 ml-auto ">
               <button type="button" className="call-to-action-btn">
                 VIRTUAL
               </button>
@@ -109,7 +117,6 @@ export default class Consulting extends Component {
                 IN-PERSON
               </button>
             </div>
-          </div>
         </section>
 
         {/* Customers Section */}
@@ -188,8 +195,6 @@ export default class Consulting extends Component {
           </div>
         </section>
 
-
-
       {/* Mobile view Slider */}
         <section className="customers-hero-section mob-slider">
           <div className="hr-div d-flex">
@@ -198,7 +203,7 @@ export default class Consulting extends Component {
           <h1>what they’re saying</h1>
           <div className="customers-cards col-10  d-flex">
           <Slider {...settings}> 
-            <div className="card-main">
+            <div className="slider-card-main">
               <div className="card">
                 <h1>Design Quality</h1>
                 <p>
@@ -265,14 +270,10 @@ export default class Consulting extends Component {
               </div>
             </div>
             </Slider>
-          </div>
-          
+          </div>          
         </section>
 
-
-
-
-
+        {/* FAQ Section */}
         <section className="FAQ">
           <div className="hr-div d-flex ">
             <hr /> <p> Frequently Asked Questions</p>
@@ -331,11 +332,12 @@ export default class Consulting extends Component {
           </div>
         </section>
 
+        {/* Schedule section */}
         <section className="schedule">
           <div className="schedule-main col-lg-10 col-sm-12 d-flex">
             <div className="schedule-left col-3">
               {/* DatePicker */}
-              <DatePicker onChange={onChange} />
+              <DatePicker onChange={this.onChange} />
             </div>
             <div className="schedule-right col-lg-7 col-sm-12">
               <h1>Schedule a Free Consultation</h1>
@@ -369,6 +371,8 @@ export default class Consulting extends Component {
             </div>
           </div>
         </section>
+
+        {/* Final Section */}
         <section className="final-call">
           <div className="hr-div d-flex">
             <hr /> <p> What Are You Waiting For?</p>
@@ -386,10 +390,12 @@ export default class Consulting extends Component {
             </div>
           </div>
         </section>
+
+        {/* Social Section */}
         <section className="social d-flex">
           <h5>Follow us on social</h5>
           <div className="social-icons">
-            <ul className="social-links d-flex">
+            <ul className="consulting-social-links d-flex">
               <li>
                 <Link to={"/#"}>
                   <img
@@ -425,13 +431,16 @@ export default class Consulting extends Component {
             </ul>
           </div>
         </section>
+
+        {/* Footer */}
         <footer>
           <div className="hr-div d-flex">
             <hr /> <p> Drop Us A Line</p>
           </div>
-          <div className="footer-content-main col-lg-10 col-sm-12 d-flex">
+
+          <div className="footer-content-main main-footer col-lg-10 my-5 mx-auto col-sm-12  p-lg-0 ">
             {/* left-content */}
-            <div className="left-content">
+            <div className="left-content mr-lg-5 ml-sm-3 ml-3 col-lg-3 col-sm-7 col-10">
               <h4>ClearFit.</h4>
               <p>
                 Clear Fit software consulting can help your business over the
@@ -453,89 +462,16 @@ export default class Consulting extends Component {
                 info@clearfitllc.com
               </div>
             </div>
-            <div className="center-links  col-lg-2 col-sm-10">
-              <h4>LINKS</h4>
-              <div className="links d-flex">
-                <ul>
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Portfolio</li>
-                  <li>Pricing</li>
-                </ul>
-                <ul>
-                  <li>Contact</li>
-                  <li>News</li>
-                  <li>Technologies</li>
-                  <li>Case study</li>
-                  <li>Terms</li>
-                </ul>
-              </div>
-            </div>
-            <div className="showcase ">
-              <h4>PHOTO SHOWCASE</h4>
-              <div className="images-main d-flex">
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-1.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-2.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-3.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-4.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-5.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-6.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-7.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-8.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-                <div className="image">
-                  <img
-                    src={require("./../../assets/images/gallery/gallery-9.jpg")}
-                    alt="showcase"
-                  ></img>
-                </div>
-              </div>
+            {/* Reused Footer */}
+            <div className="reusedFootre col-lg-9 d-flex col-sm-12 flex-column-reverse flex-md-column-reverse flex-sm-column-reverse flex-lg-row justify-content-around">
+            <Footerreused></Footerreused>
             </div>
           </div>
+
           <section className="copyright text-center">
             &copy; 2022 ClearFit LLC
           </section>
-        </footer>
+        </footer>        
       </>
     );
   }

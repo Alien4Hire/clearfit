@@ -1,13 +1,20 @@
 /* consulting Style */
+/*** 
+====================================================================
+	Hero Section
+====================================================================
+***/
 .hero-section {
   background-color: #0eaf96;
   height: 811px;
   width: 100%;
 }
+
 .hero-section {
   background-image: url(./../images/background/consultingbg.png);
   color: #ffffff;
 }
+
 .opacity-container {
   background-image: url(./../images/background/overlay.png);
   text-align: center;
@@ -19,25 +26,41 @@
   opacity: 1;
   width: 100%;
 }
+
 .hero-section h1 {
   font-weight: 600;
-  font-size: 74px;
+  font-size: clamp(1.6rem, 4vw, 4.625rem);
+  /* font-size: 74px; */
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
+.hero-section .paragraph {
+  width: 38%;
+}
+
 .call-to-action-btn {
   background: linear-gradient(96.73deg, #c1292a 27.66%, #d0631a 85.99%);
   box-shadow: 0px 4px 4px 0px #000000a6;
   border-radius: 100px;
-  padding: 3px 45px 3px 45px;
   color: white;
-  font-weight: 600;
+  height: 35px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 15px;
 }
+
+/*** 
+====================================================================
+	Clients Section
+====================================================================
+***/
 .clients {
   padding: 60px;
   align-items: center;
   justify-content: space-around;
 }
+
 .clients-text {
   text-align: right;
   font-weight: 500;
@@ -45,28 +68,46 @@
   font-size: 30px;
   width: 7%;
 }
+
+/*** 
+====================================================================
+	Life Headline Section
+====================================================================
+***/
 .life-headline {
   background: linear-gradient(95.56deg, #c1292a 31.52%, #d0631a 90.12%);
   text-align: center;
   color: white;
-  padding: 50px 0 50px 0;
+  padding: 80px 0 60px 0;
 }
+
 .life-headline h1 {
-  line-height: 98px;
   font-style: normal;
   font-weight: 700;
-  transform: scale(2, 1.6);
-  /* font-size: 64px; */
+  font-size: 25px;
+  transform: scale(3.3);
 }
+
+.life-headline h4 {
+  font-weight: 400;
+}
+
 .life-headline p {
-  line-height: 30px;
-  width: 23%;
+  margin-top: 60px;
+  width: 43%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .life-headline h6 {
   line-height: 28px;
 }
+
+/*** 
+====================================================================
+	Who-we-are Section
+====================================================================
+***/
 .who-we-are {
   background: #282828;
   color: red;
@@ -74,83 +115,118 @@
   justify-content: center;
   padding: 20px 0 50px 0;
 }
+
 .who-we-are h1 {
-  width: 30%;
+  width: clamp(35rem, 35%, 40rem);
   color: white;
   line-height: 60px;
   font-weight: 500;
   padding: 20px 0px 30px 150px;
 }
-hr {
-  height: 4px;
-  width: 150px;
-  background-color: red;
-  box-shadow: 0px 7px 17px 4px #282828;
-}
-.btn {
-  background-color: #0eaf96;
-}
-.btn-center {
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
-}
-.work-hero-section {
-  background-color: #0eaf96;
-  min-height: 811px;
-  background-image: url(./../images/background/howWork.png);
-  color: #282828;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right;
-  padding: 10px 160px 0px 0;
-  align-items: flex-start;
-  justify-content: space-between;
-  display: flex;
-}
-.content {
-  transform: translateY(25%);
-}
-.work-hero-section h1 {
-  font-weight: 600;
-  font-size: 64px;
-  padding-bottom: 30px;
-}
 
-.work-hero-section-btns button {
-  margin-left: 45px;
-  margin-top: 30px;
-}
+/* Hr tag */
 .hr-div p {
   background: linear-gradient(92.92deg, #c1292a, #d0631a);
-  /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-weight: 600;
   background-color: #0eaf96;
 }
+
+hr {
+  height: 4px;
+  width: 150px;
+  background-color: red;
+  box-shadow: 0px 7px 17px 4px #282828;
+}
+
+.btn {
+  background-color: #0eaf96;
+}
+
+.btn-center {
+  padding-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*** 
+====================================================================
+	Work-Hero Section
+====================================================================
+***/
+.work-hero-section {
+  height: auto;
+  background-image: url(./../images/background/howWork.png);
+  color: #282828;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+  padding-bottom: 100px;
+}
+
+.work-content {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 150px;
+  height: auto;
+}
+
+.work-hero-section h1 {
+  font-weight: 600;
+  font-size: 64px;
+  padding-bottom: 30px;
+}
+
+.work-hero-section-btns {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-right: 150px;
+
+}
+
+.work-hero-section-btns button {
+  height: 35px;
+  width: 200px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+/*** 
+====================================================================
+	Customers Section
+====================================================================
+***/
 .customers-hero-section {
   background-image: url(./../images/background/customers-bg.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 792px;
+  height: auto;
+  padding-bottom: 100px;
   padding-top: 20px;
   text-align: center;
 }
+
 .customers-hero-section h1 {
   font-weight: 600;
   line-height: 99px;
   font-size: 60px;
   color: white;
 }
+
 .customers-cards {
   justify-content: space-around;
   margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .card {
   background: #282828 !important;
   padding: 0px 31px 5px 20px;
@@ -158,21 +234,30 @@ hr {
   height: 332.25px;
   text-align: left;
 }
+
+.card-main {
+  display: block;
+}
+
+.mob-slider {
+  display: none;
+}
+
 .card p {
   color: white;
 }
+
 .card h1 {
   font-size: 30px;
-  background: linear-gradient(
-    94.29deg,
-    #c1292a 19.15%,
-    #d0631a 54.03%
-  ); /* background: -webkit-linear-gradient(#eee, #333); */
+  background: linear-gradient(94.29deg,
+      #c1292a 19.15%,
+      #d0631a 54.03%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 20px;
   font-weight: 600;
 }
+
 .profile {
   background: rgba(0, 0, 0, 0.76);
   width: 230px;
@@ -183,93 +268,117 @@ hr {
   padding-right: 20px;
   margin: 30px 0px 0px 20px;
 }
+
 .profile h6 {
   color: white;
   font-weight: 700;
 }
+
 .profile small {
   background: linear-gradient(92.92deg, #c1292a, #d0631a);
-  /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .profile-content {
   text-align: center;
   width: 100%;
   padding: 10px 0px 0px 0px;
 }
+
+/*** 
+====================================================================
+	FAQ Section
+====================================================================
+***/
 .FAQ {
   background-image: url(./../images/background/faq-bg.png);
-  min-height: 651px;
+  padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20px;
 }
+
 summary {
   color: white;
   line-height: 44px;
   font-size: 20px;
   font-weight: 600;
 }
+
 .faq-content {
   margin-left: auto;
   margin-top: 50px;
-  padding-right: 150px !important;
 }
+
 details {
   color: white;
+  max-width: 924px;
 }
-details > summary {
+
+details>summary {
   list-style-image: url(./../images/background/plus.png);
 }
+
 summary:active,
 summary:focus {
   background: linear-gradient(92.92deg, #c1292a, #d0631a);
-  /* background: -webkit-linear-gradient(#eee, #333); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/*** 
+====================================================================
+	Schedule Section
+====================================================================
+***/
 .schedule {
   background: linear-gradient(95.56deg, #c1292a 31.52%, #d0631a 90.12%);
   text-align: center;
   color: white;
   padding: 50px 0 50px 0;
 }
+
 .schedule-main {
-  /* background-color: #0eaf96; */
   margin-left: auto;
   margin-right: auto;
   align-items: center;
   justify-content: space-between;
 }
+
 .schedule-right {
   text-align: left;
 }
+
 .schedule-right h1 {
   font-weight: 600;
   line-height: 70.31px;
 }
+
 .schedule-right h5 {
   font-weight: 500;
   line-height: 28.13px;
 }
+
 .schedule-right p {
   line-height: 28px;
   margin-top: 30px;
 }
+
 .from-to {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
 }
+
 .select-time-main {
   color: black;
   margin-top: 50px;
 }
+
 .from {
   background: #282828;
-  border-radius: 10px;
   align-items: center;
   text-align: left;
   padding: 5px 0px 5px 0px;
@@ -277,10 +386,12 @@ summary:focus {
   color: white;
   margin-right: 30px;
 }
+
 .from p {
   margin: 0;
 }
-.select-time-main > button {
+
+.select-time-main>button {
   background: #282828;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
@@ -288,34 +399,90 @@ summary:focus {
   font-weight: 600;
   padding: 5px 30px 5px 30px;
   margin-top: 30px;
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
 }
+
+/*** 
+====================================================================
+	Date Picker
+====================================================================
+***/
+.sdp--text {
+  color: black;
+}
+
+.sdp {
+  background: #282828 !important;
+  width: 22rem !important;
+  min-height: 25rem !important;
+}
+
+.sdp--square-btn {
+  background: #282828 !important;
+}
+
+.sdp--text {
+  color: white;
+}
+
+.sdp--dates-grid {
+  gap: 22px !important;
+}
+
+.sdp--square-btn:focus {
+  box-shadow: 0 0 0 2px #ffffffb3 !important;
+  color: black;
+  background-color: white !important;
+}
+
+input[type="date"] {
+  padding: 3px 10px 3px 10px;
+  background: #282828;
+  display: none;
+  color: white;
+}
+
+.select-heading h5:nth-child(1) {
+  display: none;
+}
+
+/*** 
+====================================================================
+	Final-call Section
+====================================================================
+***/
 .final-call {
   background: #282828;
   height: 461px;
   padding-top: 20px;
 }
+
 .final-call-content {
   color: white;
   text-align: center;
   margin-top: 40px;
   transform: translateY(25%);
 }
+
 .final-call-content h1 {
   font-weight: 600;
   font-size: 60px;
   line-height: 98.44px;
 }
+
 .final-call-content h5 {
   font-weight: 600;
   font-size: 30px;
   line-height: 42.19px;
 }
+
 .final-call-submit {
   align-items: center;
   justify-content: center;
   text-align: right;
   margin-top: 20px;
 }
+
 .final-call-action--btn {
   background: linear-gradient(96.73deg, #c1292a 27.66%, #d0631a 85.99%);
   box-shadow: 0px 4px 4px 0px #000000a6;
@@ -326,7 +493,12 @@ summary:focus {
   font-size: 20px;
   margin-left: 30px;
 }
-.social {
+
+/*** 
+====================================================================
+	Social icons Section
+====================================================================
+***/.social {
   color: white;
   background: #000000;
   height: 169px;
@@ -334,86 +506,56 @@ summary:focus {
   align-items: center;
   justify-content: center;
 }
-.social-links {
-  margin-left: 30px;
+
+.consulting-social-links {
   align-items: center;
 }
-ul li {
+
+.consulting-social-links li {
   margin-left: 20px;
 }
+
+/*** 
+====================================================================
+	Footer
+====================================================================
+***/
 footer {
   background: #282828;
   color: white;
   padding-top: 20px;
 }
+
 .footer-content-main {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-}
-.left-content {
-  min-height: 400px;
-  width: 17%;
-  /* background-color: #D0631A; */
-}
+  justify-content: space-between;
+} 
+
 .left-content h4 {
+  color: #ffffff;
   font-weight: 600;
   font-size: 35px;
 }
+
 .left-content p {
   line-height: 30px;
   margin-top: 20px;
   text-align: justify;
 }
+
 .contact {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
 .contact img {
   padding-right: 20px;
 }
+
 .email img {
   padding-right: 18px;
 }
-.showcase {
-  /* background-color: beige; */
-  min-height: 400px;
-  width: 18%;
-}
-.images-main {
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-.image {
-  width: 80px;
-  height: 100px;
-}
-.center-links {
-  min-height: 400px;
-  /* background-color: #0eaf96; */
-}
-.center-links h4 {
-  font-weight: 600;
-  font-size: 20px;
-}
-.links {
-  justify-content: space-between;
-  margin-top: 25px;
-}
-.center-links ul li {
-  padding: 0;
-  margin: 0;
-  line-height: 53px;
-}
-.showcase h4 {
-  font-size: 20px;
-  font-weight: 500;
-}
+
 .copyright {
   background: #000000;
   padding: 5px;
@@ -423,76 +565,117 @@ footer {
   font-size: 18px;
   line-height: 60px;
 }
-/* DatePicker */
-.sdp--text {
-  color: black;
-}
-.sdp {
-  background: #282828 !important;
-  width: 22rem !important;
-  height: 25rem !important;
-}
-.sdp--square-btn {
-  background: #282828 !important;
-}
-.sdp--text {
-  color: white;
-}
-.sdp--dates-grid {
-  gap: 22px !important;
-}
 
-/* Media Queries Mobile responsiveness */
-@media only screen and (max-width: 426px) {
+
+
+/*** 
+====================================================================
+	Mobile Responsive Media Queries
+====================================================================
+***/
+
+@media only screen and (max-width: 701px) {
+  .hero-section h1 {
+    font-size: clamp(6.6rem, 1vw, 3.625rem);
+  }
+
+  .work-hero-section {
+    background-image: url(./../images/background/work-responsive.png);
+  }
+
+  .hero-section .paragraph {
+    width: 90%;
+  }
+
+  .mob-slider {
+    display: block;
+  }
+
+  .web-card-view {
+    display: none;
+  }
+
+  .FAQ {
+    padding-bottom: 40px;
+  }
+
   .clients {
     flex-direction: column;
     padding: 30px;
   }
+
   .clients-text {
     text-align: center;
     font-size: 22px;
     width: 100%;
     margin-bottom: 10px;
   }
+
   .life-headline h1 {
-    line-height: 98px;
-    transform: scale(0.8, 0.7);
-    /* font-size: 64px; */
+    font-size: 19px;
+    transform: scale(2);
   }
+
   .life-headline p {
     width: 65%;
   }
+
   .who-we-are h1 {
-    width: 80%;
+    width: 50%;
     padding: 20px 0px 30px 40px;
     font-size: 28px;
   }
+
   hr {
     width: 40px;
   }
+
   .hr-div p {
     font-size: 17px;
   }
+
   .work-hero-section h1 {
     font-size: 34px;
     padding-bottom: 30px;
   }
-  .content {
-    transform: translateY(5%);
+
+  .work-hero-section-btns {
+    margin-right: 0;
+
   }
+
+  .work-hero-section-btns button {
+    height: 35px;
+    width: 170px;
+    font-size: 14px;
+  }
+
+  .work-content {
+    margin-right: 0px;
+  }
+
   .customers-hero-section h1 {
     font-size: 35px;
   }
+
   .card {
-    width: 300px;
+    width: 100%;
   }
+
+  .card-main {
+    display: none;
+  }
+
+  .slider-card-main {
+    width: 80% !important;
+
+  }
+
   .customers-cards {
     flex-direction: column;
     margin-top: 30px;
   }
-  .profile {
-    margin-bottom: 30px;
-  }
+
   .faq-content {
     margin-top: 2px;
     background-color: rgb(18 16 16 / 60%);
@@ -500,10 +683,12 @@ footer {
     overflow-wrap: break-word;
     padding: 10px 0px 10px 0px;
   }
+
   summary {
     font-size: 12px;
-    width: 95%;
+    width: 100%;
   }
+
   .schedule-main {
     margin-left: 5px;
     margin-right: 5px;
@@ -511,85 +696,1012 @@ footer {
     justify-content: unset;
     flex-direction: column-reverse;
   }
+
   .schedule-right h1 {
     font-size: 30px;
     line-height: 40px;
   }
+
   .schedule-right h5 {
     font-size: 15px;
   }
+
   .final-call-content h1 {
     font-size: 25px;
     line-height: 9px;
   }
+
   .final-call-submit {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
+
   .final-call-content h5 {
     font-size: 15px;
     line-height: 30px;
   }
+
   .final-call-action--btn {
     padding: 5px 30px 5px 30px;
     font-size: 15px;
     margin-left: unset;
     margin-top: 40px;
   }
+
   .social {
     flex-direction: column;
   }
-  .social-links {
+
+  .consulting-social-links {
     margin-left: 0px;
     align-items: center;
     margin-top: 20px;
   }
-  ul li {
-    margin-left: 40px;
+
+  ul li :nth-child(1) {
+    margin-left: 2px;
   }
+
   .footer-content-main {
     flex-direction: column;
   }
-  .left-content {
-    min-height: 400px;
+
+  .details {
+    width: 500px;
+  }
+
+  summary {
+    line-height: 35px;
+  }
+
+  .sdp {
+    margin-top: 50px;
+  }
+
+  input[type="date"] {
+    display: block;
+  }
+
+  .sdp {
+    display: none;
+  }
+
+  .from-to {
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    justify-content: right !important;
+  }
+
+  .from {
+    font-size: 3px;
+    margin-right: 0;
+    padding: 1px 1px 5px 1px;
+  }
+
+  .from p {
+    font-size: 14px;
+  }
+
+  .from h6 {
+    font-size: 12px;
+  }
+
+  .to {
+    margin-top: 15px;
+  }
+
+  .schedule-right {
+    padding-right: 34px !important;
+    padding-left: 9px !important;
+  }
+
+  input[type="date"] {
+    align-items: center;
+    text-align: left;
+    padding: 9px 8px 9px 8px;
+    width: 43%;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  .select-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 94%;
+    color: white;
+  }
+
+  .select-heading h5:nth-child(1) {
+    display: block;
+  }
+
+  .final-call {
+    height: 350px;
+  }
+
+  .final-call-content {
+    transform: translateY(5%);
+  }
+
+  .consulting-social-links {
+    margin-left: 0px;
+  }
+  .reusedFootre{
+    margin-top: 56px;
+  }
+
+  /* slider btns */
+  .slick-prev,
+  .slick-next {
+    margin-top: -58px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .hero-section h1 {
+    font-size: clamp(5.6rem, 1vw, 3.625rem);
+  }
+
+  .hero-section .paragraph {
     width: 90%;
   }
-  .links {
+
+  .mob-slider {
+    display: block;
+  }
+
+  .web-card-view {
+    display: none;
+  }
+
+  .FAQ {
+    padding-bottom: 40px;
+  }
+
+  .clients {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .clients-text {
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .life-headline h1 {
+    font-size: 19px;
+    transform: scale(2);
+  }
+
+  .life-headline p {
+    width: 65%;
+  }
+
+  .who-we-are h1 {
+    width: 60%;
+    padding: 20px 0px 30px 40px;
+    font-size: 28px;
+  }
+
+  hr {
+    width: 40px;
+  }
+
+  .hr-div p {
+    font-size: 17px;
+  }
+
+  .work-hero-section h1 {
+    font-size: 34px;
+    padding-bottom: 30px;
+  }
+
+  .work-hero-section {
+    background-size: 146% 100%;
+  }
+
+  .work-hero-section-btns {
+    margin-right: 0;
+  }
+
+  .work-hero-section-btns button {
+    height: 35px;
+    width: 170px;
+    font-size: 14px;
+  }
+
+  .work-content {
+    margin-right: 0px;
+  }
+
+  .customers-hero-section h1 {
+    font-size: 35px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-main {
+    display: none;
+  }
+
+  .slider-card-main {
+    width: 80% !important;
+
+  }
+
+  .customers-cards {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .faq-content {
+    margin-top: 2px;
+    background-color: rgb(18 16 16 / 60%);
+    margin-right: auto;
+    overflow-wrap: break-word;
+    padding: 10px 0px 10px 0px;
+  }
+
+  summary {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .schedule-main {
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: column-reverse;
+  }
+
+  .schedule-right h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .schedule-right h5 {
+    font-size: 15px;
+  }
+
+  .final-call-content h1 {
+    font-size: 25px;
+    line-height: 9px;
+  }
+
+  .final-call-submit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .final-call-content h5 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .final-call-action--btn {
+    padding: 5px 30px 5px 30px;
+    font-size: 15px;
+    margin-left: unset;
+    margin-top: 40px;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .consulting-social-links {
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  ul li :nth-child(1) {
+    margin-left: 2px;
+  }
+
+  .details {
+    width: 500px;
+  }
+
+  summary {
+    line-height: 35px;
+  }
+
+  .sdp {
+    margin-top: 50px;
+  }
+
+  input[type="date"] {
+    display: block;
+  }
+
+  .sdp {
+    display: none;
+  }
+
+  .from-to {
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    justify-content: right !important;
+  }
+
+  .from {
+    font-size: 3px;
+    margin-right: 0;
+    padding: 1px 1px 5px 1px;
+  }
+
+  .from p {
+    font-size: 14px;
+  }
+
+  .from h6 {
+    font-size: 12px;
+  }
+
+  .to {
+    margin-top: 15px;
+  }
+
+  .schedule-right {
+    padding-right: 34px !important;
+    padding-left: 9px !important;
+  }
+
+  input[type="date"] {
+    align-items: center;
+    text-align: left;
+    padding: 9px 8px 9px 8px;
+    width: 43%;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  .select-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 94%;
+    color: white;
+  }
+
+  .select-heading h5:nth-child(1) {
+    display: block;
+  }
+
+  .final-call {
+    height: 350px;
+  }
+
+  .final-call-content {
+    transform: translateY(5%);
+  }
+
+  .consulting-social-links {
+    margin-left: 0px;
+  }
+
+  /* slider btns */
+  .slick-prev,
+  .slick-next {
+    margin-top: -58px;
+  }
+}
+
+/*** 
+====================================================================
+	500px Mobile Responsive Media Queries
+====================================================================
+***/
+@media only screen and (max-width: 576px) {
+  .work-hero-section-btns {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 551px) {
+  .work-hero-section-btns button {
+    height: 35px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  details {
+    width: 470px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  details {
+    width: 450px;
+  }
+
+  .who-we-are h1 {
     width: 70%;
   }
-  .showcase {
-    width: 90%;
+}
+
+@media only screen and (max-width: 511px) {
+  .work-hero-section-btns button {
+    height: 35px;
+    width: 130px;
+    font-size: 13px;
   }
-  .images-main {
+
+}
+
+@media only screen and (max-width: 502px) {
+
+  input[type="date"] {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  details {
+    width: 400px;
+  }
+}
+
+/*** 
+====================================================================
+	400px Mobile Responsive Media Queries
+====================================================================
+***/
+
+@media only screen and (max-width: 457px) {
+  .slider-card-main {
+    width: 90% !important;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(4.6rem, 1vw, 3.625rem);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  details {
+    width: 380px;
+  }
+
+  .work-hero-section-btns button {
+    height: 30px;
+    width: 120px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .mob-slider {
+    display: block;
+  }
+
+  .slider-card-main {
+    width: 100% !important;
+  }
+
+  .web-card-view {
+    display: none;
+  }
+
+  .clients {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  input[type="date"] {
+    /* padding: 9px 3px 9px 3px;
+    margin-right: 10px;
+    font-size: 12px; */
+    width: 45%;
+
+  }
+
+  .clients-text {
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .life-headline p {
+    width: 65%;
+  }
+
+  .who-we-are h1 {
     width: 80%;
+    padding: 20px 0px 30px 40px;
+    font-size: 28px;
   }
+
+  hr {
+    width: 40px;
+  }
+
+  .hr-div p {
+    font-size: 17px;
+  }
+
+  .work-hero-section h1 {
+    font-size: 34px;
+    padding-bottom: 30px;
+  }
+
   .work-hero-section {
-    padding: 10px 90px 0px 0;
-    align-items: flex-start;
-    justify-content: space-between;
-    display: flex;
-    min-height: 700px;
+    background-size: 146% 100%;
   }
+
+  .work-content {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+
+  .customers-hero-section h1 {
+    font-size: 35px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-main {
+    display: none;
+  }
+
+  .customers-cards {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .faq-content {
+    margin-top: 2px;
+    background-color: rgb(18 16 16 / 60%);
+    margin-right: auto;
+    overflow-wrap: break-word;
+    padding: 10px 0px 10px 0px;
+  }
+
+  summary {
+    font-size: 12px;
+    width: 92%;
+  }
+
+  .schedule-main {
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: column-reverse;
+  }
+
+  .schedule-right h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .schedule-right h5 {
+    font-size: 15px;
+  }
+
+  .final-call-content h1 {
+    font-size: 25px;
+    line-height: 9px;
+  }
+
+  .final-call-submit {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .final-call-content h5 {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .final-call-action--btn {
+    padding: 5px 30px 5px 30px;
+    font-size: 15px;
+    margin-left: unset;
+    margin-top: 40px;
+  }
+
+  .social {
+    flex-direction: column;
+  }
+
+  .consulting-social-links {
+    margin-left: 0px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  ul li :nth-child(1) {
+    margin-left: 2px;
+  }
+
+  .footer-content-main {
+    flex-direction: column;
+  }
+
   .work-hero-section-btns {
     display: flex;
     justify-content: space-between;
   }
-  .work-hero-section-btns button {
-    margin-left: 0;
-    padding: 5px 30px 5px 30px;
-  }
-  .content {
-    margin-top: 20px;
-  }
+
   details {
-    width: 400px;
+    width: 370px;
   }
+
   summary {
     line-height: 35px;
   }
+
   .sdp {
     margin-top: 50px;
+  }
+
+  input[type="date"] {
+    display: block;
+  }
+
+  .sdp {
+    display: none;
+  }
+
+  .from-to {
+    flex-wrap: wrap;
+    align-items: flex-start !important;
+    justify-content: right !important;
+  }
+
+  .from {
+    font-size: 3px;
+    margin-right: 0;
+    padding: 1px 1px 5px 1px;
+  }
+
+  .from p {
+    font-size: 14px;
+  }
+
+  .from h6 {
+    font-size: 12px;
+  }
+
+  .to {
+    margin-top: 15px;
+  }
+
+  .schedule-right {
+    padding-right: 34px !important;
+    padding-left: 9px !important;
+  }
+
+  input[type="date"] {
+    padding: 1px 1px 5px 1px;
+    align-items: center;
+    text-align: left;
+    padding: 9px 8px 9px 8px;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 30%;
+  }
+
+  ::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  .select-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 94%;
+    color: white;
+  }
+
+  .select-heading h5:nth-child(1) {
+    display: block;
+  }
+
+  .FAQ {
+    height: auto;
+  }
+
+  .final-call {
+    height: 350px;
+  }
+
+  .final-call-content {
+    transform: translateY(5%);
+  }
+
+  .consulting-social-links {
+    margin-left: 0px;
+  }
+
+  /* slider btns */
+  .slick-prev,
+  .slick-next {
+    margin-top: -58px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(4.6rem, 1vw, 3.625rem);
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .life-headline h1 {
+    font-size: 16px;
+  }
+
+  .life-headline p {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (max-width: 415px) {
+  input[type="date"] {
+    padding: 9px 9px 9px 9px;
+    margin-right: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 411px) {
+  .slider-card-main {
+    width: 100% !important;
+  }
+
+  .work-hero-section-btns button {
+    height: 30px;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+  input[type="date"] {
+    font-size: 14px;
+  }
+
+  .final-call-content h5 {
+    font-size: 14px;
+  }
+}
+
+/*** 
+====================================================================
+	300px Mobile Responsive Media Queries
+====================================================================
+***/
+
+@media only screen and (max-width: 394px) {
+  details {
+    width: 307px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  input[type="date"] {
+    padding: 9px 5px 9px 5px;
+    margin-right: 18px;
+    width: 120px;
+  }
+
+  details {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .customers-hero-section h1 {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 367px) {
+
+  .work-hero-section-btns button {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  .details {
+    width: 90px;
+  }
+
+  input[type="date"] {
+    padding: 9px 3px 9px 3px;
+    margin-right: 10px;
+    font-size: 13px;
+  }
+
+  .life-headline h1 {
+    transform: scale(1.6);
+  }
+
+  .life-headline p {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+
+  .life-headline h4 {
+    font-size: 13px;
+  }
+
+  .customers-hero-section h1 {
+    font-size: 27px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(3.6rem, 1vw, 3.625rem);
+  }
+
+  .who-we-are h1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .profile {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile h6 {
+    font-size: 12px;
+  }
+
+  .profile small {
+    font-size: 10px;
+  }
+  .final-call-content h5 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 334px) {
+  .slider-card-main {
+    width: 100% !important;
+  }
+
+  .customers-cards {
+    width: 100%;
+  }
+
+  .customers-hero-section h1 {
+    font-size: 10px;
+  }
+
+  .card p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 332px) {
+  input[type="date"] {
+    width: 115px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 331px) {
+  .profile {
+    width: 212px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+
+  .work-hero-section-btns button {
+    width: 95px;
+  }
+
+  .select-heading h5 {
+    font-size: 12px;
+  }
+
+  .from p {
+    font-size: 12px;
+  }
+
+  .from h6 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  input[type="date"] {
+    width: 114px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .who-we-are h1 {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  input[type="date"] {
+    padding: 9px 3px 9px 3px;
+    margin-right: 10px;
+    font-size: 12px;
+    width: 100px;
+
+  }
+
+  .from p {
+    font-size: 12px;
+  }
+
+  .from h6 {
+    font-size: 12px;
+  }
+
+  details {
+    width: 274px;
+  }
+
+  .customers-hero-section h1 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .FAQ {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 312px) {
+  .details {
+    width: 240px !important;
+  }
+}
+
+@media only screen and (max-width: 311px) {
+  .customers-hero-section h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .profile {
+    width: 200px;
+  }
+
+  .slick-slide img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 306px) {
+
+  .work-hero-section-btns button {
+    width: 85px;
   }
 }

@@ -30,7 +30,7 @@ import TeamDetails from './pages/team-details'
 import Team from './pages/team';
 import Testimonial1 from './element/testimonial1'
 import BackToTop from './layout/backToTop'
-import Consulting from './pages/Consulting';
+import Consulting from './pages/consulting';
 
 const details = [
     {
