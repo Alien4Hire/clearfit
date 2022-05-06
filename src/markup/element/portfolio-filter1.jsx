@@ -142,7 +142,7 @@ const PortfolioFilter1 = props => {
                                         </div>
                                         <div class="caption-title">
                                             <h5>{image.name}</h5>
-                                            <h3 style={{minWidth: '190px'}}><Link to={'/portfolio-details'}>{image.industry}</Link></h3>
+                                            <h3 style={{minWidth: '190px'}}><Link to={`/${image.name.toLowerCase().replace(/\s+/g, '')}`}>{image.industry}</Link></h3>
                                             <div class="view-project"><Link data-fancybox="example gallery" to="assets/images/gallery/gallery-10.jpg" class="zoom-btn"><span>+</span></Link></div>
                                         </div>
                                     </div>

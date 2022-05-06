@@ -12,13 +12,51 @@ import ProgressBar from 'react-bootstrap/ProgressBar'
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
+import axios from 'axios';
+
 const counterbg1 = require('./../../assets/images/background/image-5.jpg');
 const touchbg1 = require('./../../assets/images/background/image-8.jpg');
 
-
-
 class Index2 extends Component {
 
+    state={
+        username:'',
+        email:'',
+        message:'',
+    }
+
+    // input handelrs
+    handleusername=(e)=>{
+        this.setState({
+            username:e.target.value
+        })
+    }
+    handleemail=(e)=>{
+        this.setState({
+            email:e.target.value
+        })
+    }
+    handlemessage=(e)=>{
+        this.setState({
+            message:e.target.value
+        })
+    }
+
+    // Submit Form
+    contactSubmit=(e)=>{
+        e.preventDefault();
+        let data={
+            username:this.state.username,
+            message:this.state.message,
+            email:this.state.email
+        }
+        axios.post(process.env.REACT_APP_CONTACT_URL,data)
+        .then(res=>{
+            console.log(data);
+        }).catch(()=>{
+            console.log("Message not sent");
+        })
+    }
 
     render() {
         return (
@@ -304,20 +342,20 @@ class Index2 extends Component {
                                 </div>
                                 {/* <!-- Contact Form--> */}
                                 <div class="contact-form">
-                                    <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                    <form onSubmit={this.contactSubmit} id="contact-form">
                                         <div class="row clearfix">
                                             <div class="col-md-12 form-group">
-                                                <input type="text" name="username" placeholder="Enter name here......" required="" />
+                                                <input type="text" name="username" value={this.state.username} onChange={this.handleusername} placeholder="Enter name here......" required="" />
                                                 <i class="fas fa-user"></i>
                                             </div>
 
                                             <div class="col-md-12 form-group">
-                                                <input type="email" name="email" placeholder="Enter email here......" required="" />
+                                                <input type="email" name="email" value={this.state.email} onChange={this.handleemail} placeholder="Enter email here......" required="" />
                                                 <i class="fas fa-envelope"></i>
                                             </div>
 
                                             <div class="col-md-12 form-group">
-                                                <textarea name="message" placeholder="Enter message here......"></textarea>
+                                                <textarea name="message" value={this.state.message} onChange={this.handlemessage} placeholder="Enter message here......"></textarea>
                                                 <i class="fas fa-edit"></i>
                                             </div>
 
@@ -371,7 +409,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Divercitea</h5>
-                                        <h3><Link to={'/#'}>Online Food Ordering</Link></h3>
+                                        <h3><Link to={'/Divercitea'}>Online Food Ordering</Link></h3>
                                     </div>
                                 </div>
                             </div>
@@ -383,7 +421,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Angels Eyewear</h5>
-                                        <h3><Link to={'/#'}>eCommerce</Link></h3>
+                                        <h3><Link to={'/AngelsEyewear'}>eCommerce</Link></h3>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +433,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Cbus Social</h5>
-                                        <h3><Link to={'/#'}>Marketing</Link></h3>
+                                        <h3><Link to={'/CbusSocial'}>Marketing</Link></h3>
                                     </div>
                                 </div>
                             </div>
@@ -407,7 +445,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Vohnt</h5>
-                                        <h3><Link to={'/#'}>Carcare</Link></h3>
+                                        <h3><Link to={'/Vohnt'}>Carcare</Link></h3>
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +457,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Pierre Jean-Louis</h5>
-                                        <h3><Link to={'/#'}>Art Instalations</Link></h3>
+                                        <h3><Link to={'/PierreJean-Louis'}>Art Instalations</Link></h3>
                                     </div>
                                 </div>
                             </div>
@@ -431,7 +469,7 @@ class Index2 extends Component {
                                     </div>
                                     <div class="caption-title">
                                         <h5>Jess Garage Doors</h5>
-                                        <h3><Link to={'/#'}>Construction</Link></h3>
+                                        <h3><Link to={'/JessGarageDoors'}>Construction</Link></h3>
                                     </div>
                                 </div>
                             </div>

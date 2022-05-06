@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import GoogleMaps from "simple-react-google-maps";
+import axios from 'axios';
 // import { REACT_APP_GOOGLE_API_KEY } from './config'
 
 const aboutbg = require('./../../assets/images/background/image-11.jpg');
@@ -11,6 +12,47 @@ const aboutbg = require('./../../assets/images/background/image-11.jpg');
 
 
 class Contact extends Component {
+
+    state={
+        username:'',
+        email:'',
+        message:'',
+    }
+
+    // input handelrs
+    handleusername=(e)=>{
+        this.setState({
+            username:e.target.value
+        })
+    }
+    handleemail=(e)=>{
+        this.setState({
+            email:e.target.value
+        })
+    }
+    handlemessage=(e)=>{
+        this.setState({
+            message:e.target.value
+        })
+    }
+
+    // Submit Form
+    contactSubmit=(e)=>{
+        e.preventDefault();
+        let data={
+            username:this.state.username,
+            message:this.state.message,
+            email:this.state.email
+        }
+
+        axios.post(process.env.REACT_APP_CONTACT_URL,data)
+        .then(res=>{
+            console.log(data);
+        }).catch(()=>{
+            console.log("Message not sent");
+        })
+    }
+
 
     render() {
         console.log(process.env)
@@ -120,23 +162,23 @@ class Contact extends Component {
                             </div>
                             {/* <!-- Contact Form--> */}
                             <div className="contact-form">
-                                <form method="post" action="http://azim.commonsupport.com/Finandox/sendemail.php" id="contact-form">
+                                <form onSubmit={this.contactSubmit}  id="contact-form">
                                     <div className="row clearfix">                                    
                                         <div className="col-md-6 form-group">
                                             <label for="name">Enter your name</label>
-                                            <input type="text" name="username" id="name" placeholder="Enter name here......" required=""/>
+                                            <input type="text" name="username" value={this.state.username} onChange={this.handleusername} id="name" placeholder="Enter name here......" required=""/>
                                             <i className="fas fa-user"></i>
                                         </div>
                                         
                                         <div className="col-md-6 form-group">
                                             <label for="email">Enter your email</label>
-                                            <input type="email" name="email" id="email" placeholder="Enter email here......" required=""/>
+                                            <input type="email" name="email" id="email" value={this.state.email} onChange={this.handleemail} placeholder="Enter email here......" required=""/>
                                             <i className="fas fa-envelope"></i>
                                         </div>
                 
                                         <div className="col-md-12 form-group">
                                             <label for="message">Enter your message</label>
-                                            <textarea name="message" id="message" placeholder="Enter message here......"></textarea>
+                                            <textarea name="message" id="message" value={this.state.message} onChange={this.handlemessage} placeholder="Enter message here......"></textarea>
                                             <i className="fas fa-edit"></i>
                                         </div>
                 
