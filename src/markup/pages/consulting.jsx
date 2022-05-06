@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import "./../../assets/css/consulting.css";
-import "./../../assets/css/color.css";
+
 
 // Date Picker
-import DatePicker from 'sassy-datepicker';
+import DatePicker from "sassy-datepicker";
 
 //  Slider
 import Slider from "react-slick";
@@ -14,19 +14,19 @@ import Footerreused from "../layout/reusedFooter";
 export default class Consulting extends Component {
   onChange = (date) => {
     console.log(date.toString());
-  }
+  };
   render() {
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
     };
- 
+
     return (
       <>
-      {/* Hero Section */}
+        {/* Hero Section */}
         <section className="hero-section">
           <div className="opacity-container">
             <p>Build Your Business Better</p>
@@ -44,10 +44,8 @@ export default class Consulting extends Component {
         </section>
 
         {/*  Clients Section  */}
-        <section className="clients  d-flex">
-          <div className="clients-text ">
-            Our Awesome Clients
-          </div>
+        <section className="clients d-flex">
+          <div className="clients-text ">Our Awesome Clients</div>
           <div className="company-logos ">
             <img
               src={require("./../../assets/images/background/companylogos.png")}
@@ -62,8 +60,7 @@ export default class Consulting extends Component {
           <p>
             ClearFit Technologies was an excellent software development partner.
             The final mobile app was tested and all its functionalities
-            performed very well. Their work methodology was top-
-            notch and...
+            performed very well. Their work methodology was top- notch and...
           </p>
           <h4>H4 Headline Here</h4>
         </section>
@@ -75,10 +72,9 @@ export default class Consulting extends Component {
             <p> Who We Are</p>
           </div>
           <h1>
-            Clear Fit software  consulting can help your business
-            over the  finish line. Any software project or cloud
-            architecture we can
-            handle it with ease.
+            Clear Fit software consulting can help your business over the finish
+            line. Any software project or cloud architecture we can handle it
+            with ease.
           </h1>
           <div className="btn-center d-flex">
             <button type="button" className="call-to-action-btn">
@@ -110,13 +106,13 @@ export default class Consulting extends Component {
             </p>
           </div>
           <div className="work-hero-section-btns col-lg-4 col-md-6 col-sm-9 col-9 col-xs-12 ml-auto ">
-              <button type="button" className="call-to-action-btn">
-                VIRTUAL
-              </button>
-              <button type="button" className="call-to-action-btn">
-                IN-PERSON
-              </button>
-            </div>
+            <button type="button" className="call-to-action-btn">
+              VIRTUAL
+            </button>
+            <button type="button" className="call-to-action-btn">
+              IN-PERSON
+            </button>
+          </div>
         </section>
 
         {/* Customers Section */}
@@ -125,7 +121,7 @@ export default class Consulting extends Component {
             <hr /> <p> Testimonials</p>
           </div>
           <h1>what they’re saying</h1>
-          <div className="customers-cards col-10  d-flex">
+          <div className="customers-cards auto-container-consulting mt-5  d-flex">
             <div className="card-main">
               <div className="card">
                 <h1>Design Quality</h1>
@@ -195,82 +191,82 @@ export default class Consulting extends Component {
           </div>
         </section>
 
-      {/* Mobile view Slider */}
+        {/* Mobile view Slider */}
         <section className="customers-hero-section mob-slider">
           <div className="hr-div d-flex">
             <hr /> <p> Testimonials</p>
           </div>
           <h1>what they’re saying</h1>
           <div className="customers-cards col-10  d-flex">
-          <Slider {...settings}> 
-            <div className="slider-card-main">
-              <div className="card">
-                <h1>Design Quality</h1>
-                <p>
-                  ClearFit Technologies was an excellent software development
-                  partner. The final mobile app was tested and all its
-                  functionalities performed very well. Their work methodology
-                  was top-notch and...
-                </p>
-              </div>
-              <div className="profile d-flex">
-                <img
-                  src={require("./../../assets/images/background/profile-pic.png")}
-                  className="rounded-circle"
-                  alt="Profile Pic"
-                />
-                <div className="profile-content">
-                  <h6>Scott McDonald</h6>
-                  <small>Project Manager, Fluttr</small>
+            <Slider {...settings}>
+              <div className="slider-card-main">
+                <div className="card">
+                  <h1>Design Quality</h1>
+                  <p>
+                    ClearFit Technologies was an excellent software development
+                    partner. The final mobile app was tested and all its
+                    functionalities performed very well. Their work methodology
+                    was top-notch and...
+                  </p>
+                </div>
+                <div className="profile d-flex">
+                  <img
+                    src={require("./../../assets/images/background/profile-pic.png")}
+                    className="rounded-circle"
+                    alt="Profile Pic"
+                  />
+                  <div className="profile-content">
+                    <h6>Scott McDonald</h6>
+                    <small>Project Manager, Fluttr</small>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card-main">
-              <div className="card">
-                <h1>Design Quality</h1>
-                <p>
-                  ClearFit Technologies was an excellent software development
-                  partner. The final mobile app was tested and all its
-                  functionalities performed very well. Their work methodology
-                  was top-notch and...
-                </p>
-              </div>
-              <div className="profile d-flex">
-                <img
-                  src={require("./../../assets/images/background/profile-pic.png")}
-                  className="rounded-circle"
-                  alt="Profile Pic"
-                />
-                <div className="profile-content">
-                  <h6>Scott McDonald</h6>
-                  <small>Project Manager, Fluttr</small>
+              <div className="card-main">
+                <div className="card">
+                  <h1>Design Quality</h1>
+                  <p>
+                    ClearFit Technologies was an excellent software development
+                    partner. The final mobile app was tested and all its
+                    functionalities performed very well. Their work methodology
+                    was top-notch and...
+                  </p>
+                </div>
+                <div className="profile d-flex">
+                  <img
+                    src={require("./../../assets/images/background/profile-pic.png")}
+                    className="rounded-circle"
+                    alt="Profile Pic"
+                  />
+                  <div className="profile-content">
+                    <h6>Scott McDonald</h6>
+                    <small>Project Manager, Fluttr</small>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="card-main">
-              <div className="card">
-                <h1>Design Quality</h1>
-                <p>
-                  ClearFit Technologies was an excellent software development
-                  partner. The final mobile app was tested and all its
-                  functionalities performed very well. Their work methodology
-                  was top-notch and...
-                </p>
-              </div>
-              <div className="profile d-flex">
-                <img
-                  src={require("./../../assets/images/background/profile-pic.png")}
-                  className="rounded-circle"
-                  alt="Profile Pic"
-                />
-                <div className="profile-content">
-                  <h6>Scott McDonald</h6>
-                  <small>Project Manager, Fluttr</small>
+              <div className="card-main">
+                <div className="card">
+                  <h1>Design Quality</h1>
+                  <p>
+                    ClearFit Technologies was an excellent software development
+                    partner. The final mobile app was tested and all its
+                    functionalities performed very well. Their work methodology
+                    was top-notch and...
+                  </p>
+                </div>
+                <div className="profile d-flex">
+                  <img
+                    src={require("./../../assets/images/background/profile-pic.png")}
+                    className="rounded-circle"
+                    alt="Profile Pic"
+                  />
+                  <div className="profile-content">
+                    <h6>Scott McDonald</h6>
+                    <small>Project Manager, Fluttr</small>
+                  </div>
                 </div>
               </div>
-            </div>
             </Slider>
-          </div>          
+          </div>
         </section>
 
         {/* FAQ Section */}
@@ -279,8 +275,8 @@ export default class Consulting extends Component {
             <hr /> <p> Frequently Asked Questions</p>
           </div>
           <div className="faq-content col-lg-7 col-11">
-            <details >
-              <summary >
+            <details>
+              <summary>
                 Pellentesque habitant morbi tristique senectus et netus et
                 malesuada fames ac turpis egestas?
               </summary>
@@ -314,9 +310,7 @@ export default class Consulting extends Component {
               </summary>
             </details>
             <details>
-              <summary>
-                Proin feugiat orci quis elit ornare volutpat?
-              </summary>
+              <summary>Proin feugiat orci quis elit ornare volutpat?</summary>
             </details>
             <details>
               <summary>
@@ -334,7 +328,7 @@ export default class Consulting extends Component {
 
         {/* Schedule section */}
         <section className="schedule">
-          <div className="schedule-main col-lg-10 col-sm-12 d-flex">
+          <div className="schedule-main auto-container-consulting d-flex">
             <div className="schedule-left col-3">
               {/* DatePicker */}
               <DatePicker onChange={this.onChange} />
@@ -351,12 +345,11 @@ export default class Consulting extends Component {
               </p>
               <div className="select-time-main text-center">
                 <div className="select-heading">
-                <h5>SELECT A DATE</h5>
-                <h5>SELECT A TIME</h5>
+                  <h5>SELECT A DATE</h5>
+                  <h5>SELECT A TIME</h5>
                 </div>
                 <div className="from-to d-flex">
-                
-                <input type="date" />
+                  <input type="date" />
                   <div className="from col-lg-4 col-6">
                     <p>From</p>
                     <h6>07:00 AM</h6>
@@ -433,14 +426,14 @@ export default class Consulting extends Component {
         </section>
 
         {/* Footer */}
-        <footer>
+        {/* <footer>
           <div className="hr-div d-flex">
             <hr /> <p> Drop Us A Line</p>
           </div>
 
-          <div className="footer-content-main main-footer col-lg-10 my-5 mx-auto col-sm-12  p-lg-0 ">
-            {/* left-content */}
-            <div className="left-content mr-lg-5 ml-sm-3 ml-3 col-lg-3 col-sm-7 col-10">
+          <div className="footer-content-main main-footer bg-success my-5 mx-auto col-sm-12  p-lg-0 "> */}
+        {/* left-content */}
+        {/* <div className="left-content mr-lg-5 ml-sm-3 ml-3 col-lg-3 col-sm-7 col-10">
               <h4>ClearFit.</h4>
               <p>
                 Clear Fit software consulting can help your business over the
@@ -461,9 +454,9 @@ export default class Consulting extends Component {
                 ></img>
                 info@clearfitllc.com
               </div>
-            </div>
-            {/* Reused Footer */}
-            <div className="reusedFootre col-lg-9 d-flex col-sm-12 flex-column-reverse flex-md-column-reverse flex-sm-column-reverse flex-lg-row justify-content-around">
+            </div> */}
+        {/* Reused Footer */}
+        {/* <div className="reusedFootre bg-primary col-md-9 d-flex col-sm-12 flex-column-reverse flex-md-column-reverse flex-sm-column-reverse flex-lg-row justify-content-around">
             <Footerreused></Footerreused>
             </div>
           </div>
@@ -471,7 +464,42 @@ export default class Consulting extends Component {
           <section className="copyright text-center">
             &copy; 2022 ClearFit LLC
           </section>
-        </footer>        
+        </footer>         */}
+
+        <footer class="main-footer ">
+          <div className="hr-div d-flex">
+            <hr /> <p> Drop Us A Line</p>
+          </div>
+          <div class="auto-container-consulting mt-5 pl-sm-4">
+              <div class="row clearfix ">
+                <div className="left-content  col-lg-3 col-sm-7 col-10">
+                  <h4>ClearFit.</h4>
+                  <p>
+                    Clear Fit software consulting can help your business over
+                    the finish line. Any software project or cloud architecture
+                    we can handle it with ease.
+                  </p>
+                  <div className="contact">
+                    <img
+                      src={require("./../../assets/images/background/phone.png")}
+                      alt="contact"
+                    ></img>
+                    614. 470. 4134
+                  </div>
+                  <div className="email">
+                    <img
+                      src={require("./../../assets/images/background/email.png")}
+                      alt="email"
+                    ></img>
+                    info@clearfitllc.com
+                  </div>
+                </div>
+                <div className="col-lg-9 footereused col-sm-8 p-0 d-flex justify-content-around flex-column-reverse flex-md-column-reverse flex-sm-column-reverse flex-lg-row">
+                <Footerreused></Footerreused>
+                </div>
+              </div>
+          </div>
+        </footer>
       </>
     );
   }
