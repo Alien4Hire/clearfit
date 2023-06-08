@@ -1,0 +1,31 @@
+.profile_height_width {
+    width: 275px;
+    height:288px;
+    object-fit: contain;
+}
+
+.signature_padding {
+    float: right;
+    margin-top: -20px;
+}
+
+
+.text-left-custom {
+    text-align: left;
+} 
+@media only screen and (max-width: 768px) {
+    .text-left-custom {
+        text-align: center;
+    } 
+  }
+
+
+.half_cut{
+ background: linear-gradient(to bottom, #282828 50%, #282828 50%);
+}
+
+@media only screen and (max-width: 768px) {
+    .half_cut{
+        background: linear-gradient(to bottom, #282828 80%, black 20%);
+       }
+  }

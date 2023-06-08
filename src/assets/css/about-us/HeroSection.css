@@ -1,0 +1,28 @@
+.bg_responsive {
+    min-height: 600px;
+    background: url('../../images/about-us/bg_dots.png');
+}
+
+.bg-left_to_right {
+    min-height: 600px;
+    background: url('../../images/about-us/bg-white_left-to-right.png') no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .bg-left_to_right {
+       background: url('../../images/about-us/bg-white_left-to-right.png');
+      background-size: contain;
+    }
+  }
+
+  .custom_width {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .custom_width {
+      width: 60% !important;
+    }
+  }

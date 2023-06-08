@@ -1,0 +1,86 @@
+@import url('./HeroSection.css');
+@import url('./ProfileSection.css');
+
+.bg_primary_custom_color {
+    background: #282828;
+}
+
+.height_top_navbar {
+    height: 30px;
+}
+
+.orange_color {
+    color: #C1292A;
+}
+
+.light_grey_color {
+   color:#545454
+}
+
+.text_gradient {
+    background: linear-gradient(96.73deg, #C1292A 27.66%, #D0631A 85.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+.letter_spacing {
+    letter-spacing: 1px;
+  }
+  .letter-spacing-2 {
+    letter-spacing: 2px;
+  }
+.padding_container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+ }
+ .black_dots_bg {
+    min-height: 600px;
+    background: url('../../images/about-us/black_dots_bg.png');
+ }
+ 
+.max-width-custom {
+  max-width: 900px;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+
+
+.card-group img {
+  width:60px;
+  object-fit: contain;
+}
+.card-group span {
+  width: 200px;
+}
+
+
+.card-group {
+  background: #282828;
+  /* min-width: 400px;  */
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  /* margin-bottom: 30px; */
+}
+
+@media only screen and (max-width: 992px) {
+  .card-group {
+     padding: 2;
+     /* min-width: 120px; */
+  }
+  
+}
+@media only screen and (max-width: 992px) {
+  .card-group span {
+    width: unset;
+  }
+  
+}
+
+
