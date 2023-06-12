@@ -1,0 +1,119 @@
+.home_custom_width {
+    width:100px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.bg_black {
+    background: black;
+}
+
+.div_center{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+
+}
+
+.margin_top {
+    margin-top: -100px;
+}
+
+.bg-left_to_right_home {
+    min-height: 700px;
+    background: url('../../images/about-us/bg-white_left-to-right.png') no-repeat;
+    background-size: cover;
+}
+
+.bg-left_to_right_home {
+    min-height: 700px;
+    background: url('../../images/about-us/bg-white_left-to-right.png') no-repeat;
+    background-size: cover;
+}
+
+
+.polygon_size {
+    height: 164px;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1260px) {
+    .polygon_size {
+        height: 140px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bg-left_to_right_home  {
+       background: url('../../images/about-us/bg-white_left-to-right.png');
+      background-size: contain;
+    }
+  }
+
+.card_width {
+    max-width: 450px;
+    min-height: 400px;
+  }
+
+.cards_border {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.font-sz-32 {
+    font-size: 32px;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .font-sz-32 {
+        font-size: 22px;
+    }
+}
+
+
+  .padding_container_cards {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right:20px;
+  }
+
+  .text-black {
+    color: black;
+  }
+
+.cross_fit_image {
+    /* min-height: 500px; */
+    background: url('../../images/homepage/bg_gradientwhite.png') no-repeat;
+    background-size: cover;
+}
+
+.bg_responsive_crossfit {
+    /* min-height: 500px; */
+    background: url('../../images/about-us/bg_dots.png');
+}
+.margin_bottom {
+   bottom: -120px;
+}
+
+.padding_container_c {
+    padding: 90px;
+}
+
+.crossfit_images {
+    height: 80px;
+    width: 80px;
+
+}

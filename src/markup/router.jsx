@@ -32,6 +32,7 @@ import Testimonial1 from "./element/testimonial1";
 import BackToTop from "./layout/backToTop";
 import consulting from "./pages/consulting";
 import AboutUS from "./pages/About-US/about-us";
+import Home from "./pages/HomePage/Home";
 
 const details = [
   {
@@ -154,6 +155,7 @@ class Router extends Component {
             <Switch>
               <Route path="/" exact component={Index2} />
               <Route path="/about-us" exact component={AboutUS} />
+              <Route path="/home" exact component={Home} />
               <Route path="/index-2" component={Index2} />
               <Route path="/index-3" component={Index3} />
               <Route path="/index-4" component={Index4} />
