@@ -42,7 +42,7 @@ const ProfileScetion = () => {
                 <img
                   className="signature_padding"
                   alt="No Found..."
-                  src={require("../../../assets/images/about-us/signature.png")}
+                  src={require("../../../assets/images/about-us/signature-name.png")}
                 />
               </div>
             </div>

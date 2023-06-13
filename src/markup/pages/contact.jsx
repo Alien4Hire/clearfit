@@ -97,7 +97,7 @@ class Contact extends Component {
                                             <div className="icon"><span className="flaticon-call-1"></span></div>
                                             <h3>Phone Number</h3>
                                             <ul>
-                                                <li><Link to={'/tel:+16144704134'}>+1 614-470-4134</Link></li>
+                                                <li><Link to={'/tel:+8333664285'}>(833) 366-4285</Link></li>
                                             </ul>
                                         </div>
                                     </div>

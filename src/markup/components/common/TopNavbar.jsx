@@ -21,10 +21,10 @@ const TopNavBar = () => {
               <div className="d-flex align-items-center gap-2">
                 <i className="far fa-phone orange_color"></i>
                 <Link
-                  to={"tel:614-470-4134"}
+                  to={"tel:8333664285"}
                   className="text-white text-decoration-none d-none d-lg-block fw-normal  text-uppercase"
                 >
-                  614-470-4134
+                  (833) 366-4285
                 </Link>
               </div>
             </div>

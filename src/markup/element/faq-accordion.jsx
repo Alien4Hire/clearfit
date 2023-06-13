@@ -78,7 +78,7 @@ class FaqAccordion extends Component {
                                         </AccordionItemHeading>
                                         <AccordionItemPanel>
                                             <p>
-                                                To get started and get our developers working on your project as soon as possible you can call us at +1 614-470-4134 or click contact in the menu and fill out the contact form!
+                                                To get started and get our developers working on your project as soon as possible you can call us at (833) 366-4285 or click contact in the menu and fill out the contact form!
                                             </p>
                                         </AccordionItemPanel>
                                     </AccordionItem>
