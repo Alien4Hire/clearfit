@@ -1,119 +1,282 @@
 .home_custom_width {
-    width:100px;
+  width: 100px;
 }
 
 .fs-24 {
-    font-size: 24px;
+  font-size: 24px;
 }
 .fs-20 {
-    font-size: 20px;
+  font-size: 20px;
 }
 .fs-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 .bg_black {
-    background: black;
+  background: black;
 }
 
-.div_center{
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-
+.div_center {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
 }
 
-.margin_top {
-    margin-top: -100px;
-}
-
-.bg-left_to_right_home {
-    min-height: 700px;
-    background: url('../../images/about-us/bg-white_left-to-right.png') no-repeat;
-    background-size: cover;
+.margin_top_hero_section {
+  margin-top: -100px;
 }
 
 .bg-left_to_right_home {
-    min-height: 700px;
-    background: url('../../images/about-us/bg-white_left-to-right.png') no-repeat;
-    background-size: cover;
+  min-height: 700px;
+  background: url("../../images/about-us/bg-white_left-to-right.png") no-repeat;
+  background-size: cover;
 }
 
+.bg-left_to_right_home {
+  min-height: 700px;
+  background: url("../../images/about-us/bg-white_left-to-right.png") no-repeat;
+  background-size: cover;
+}
 
 .polygon_size {
-    height: 164px;
-    width: 100%;
+  height: 164px;
+  width: 100%;
 }
 
-
-
 @media only screen and (max-width: 1260px) {
-    .polygon_size {
-        height: 140px;
-        width: 100%;
-    }
+  .polygon_size {
+    height: 140px;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .bg-left_to_right_home  {
-       background: url('../../images/about-us/bg-white_left-to-right.png');
-      background-size: contain;
-    }
+  .bg-left_to_right_home {
+    background: url("../../images/about-us/bg-white_left-to-right.png");
+    background-size: contain;
   }
+}
 
 .card_width {
-    max-width: 450px;
-    min-height: 400px;
-  }
+  max-width: 450px;
+  min-height: 400px;
+}
 
 .cards_border {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .font-sz-32 {
-    font-size: 32px;
-
-  }
-
-  @media only screen and (max-width: 600px) {
-    .font-sz-32 {
-        font-size: 22px;
-    }
+  font-size: 32px;
 }
 
-
-  .padding_container_cards {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 20px;
-    padding-right:20px;
+@media only screen and (max-width: 600px) {
+  .font-sz-32 {
+    font-size: 22px;
   }
+}
 
-  .text-black {
-    color: black;
-  }
+.padding_container_cards {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.text-black {
+  color: black;
+}
 
 .cross_fit_image {
-    /* min-height: 500px; */
-    background: url('../../images/homepage/bg_gradientwhite.png') no-repeat;
-    background-size: cover;
+  background: url("../../images/homepage/bg_gradientwhite.png") no-repeat;
+  background-size: cover;
 }
 
 .bg_responsive_crossfit {
-    /* min-height: 500px; */
-    background: url('../../images/about-us/bg_dots.png');
+  background: url("../../images/about-us/bg_dots.png");
 }
 .margin_bottom {
-   bottom: -120px;
+  bottom: -120px;
 }
 
-.padding_container_c {
-    padding: 90px;
+.padding_container_crossfit {
+  padding: 90px;
 }
 
 .crossfit_images {
-    height: 80px;
-    width: 80px;
+  height: 80px;
+  width: 80px;
+}
 
+.max_Width_seasoned {
+  max-width: 800px;
+}
+
+.max_Width_ux_designers {
+  max-width: 640px;
+}
+.max_width_top_tier {
+  max-width: 750px;
+}
+.max_width_custom {
+  max-width: 900px;
+}
+.padding_profile {
+  padding: 40px;
+}
+
+.profile_image {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 992px) {
+  .profile_image {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .padding_profile {
+    padding: 10px;
+  }
+}
+
+.signature_profile {
+  height: 140px;
+  width: 140px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 992px) {
+  .signature_profile {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+    position: relative;
+    bottom: -20px;
+    left: 70px;
+  }
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 992px) {
+  .fs-30 {
+    font-size: 20px;
+  }
+}
+.height_founder {
+  height: 50px;
+}
+
+.card_wrapper {
+  max-width: 390px;
+  min-height: 400px;
+}
+@media only screen and (max-width: 960px) {
+  .card_wrapper {
+    max-width: 100%;
+  }
+}
+.inner_wrapper {
+  padding: 40px;
+  min-height: 350px;
+}
+
+.card_pic_wrapper {
+  background: rgba(0, 0, 0, 0.76);
+  border-radius: 100px 100px 100px 100px;
+  max-width: 300px;
+}
+.fs-10 {
+  font-size: 10px;
+}
+
+.slick-slide div {
+  margin-right: 15px;
+}
+.profile_pic {
+  height: 50px;
+  width: 50px;
+}
+.slider_padding {
+  padding: 60px;
+}
+@media only screen and (max-width: 768px) {
+  .slider_padding {
+    padding: 14px;
+  }
+}
+.rounded_bars {
+  background: url("../../images/homepage/rounded_bars.png") no-repeat;
+}
+
+.home_overdue_padding {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+@media only screen and (max-width: 968px) {
+  .rounded_bars {
+    background: url("../../images/homepage/mobile_responsive.png") no-repeat;
+  }
+  .home_overdue_padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.input_text {
+  background: #666666;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  margin-left: 0px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
+.input_wrapper {
+  background: #666666;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.padding-5 {
+  padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  .input_wrapper {
+    padding: 3px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .padding-5 {
+    padding: 5px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.bg_black_container {
+  background: url("../../images/homepage/slate.png") no-repeat;
+  background-size: cover;
+}
+
+.bg_black_shadow_cover {
+  background: url("../../images/homepage/black_shadow.png") no-repeat;
+  background-size: cover;
 }

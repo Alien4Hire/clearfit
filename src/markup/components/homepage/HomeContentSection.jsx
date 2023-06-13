@@ -8,7 +8,7 @@ const HomeContentSection = () => {
       <Container>
         <Row>
           <Col>
-            <div className="margin_top d-flex flex-wrap flex-lg-nowrap justify-content-between justify-content-sm-center justify-content-lg-between gap-1">
+            <div className="margin_top_hero_section d-flex flex-wrap flex-lg-nowrap justify-content-between justify-content-sm-center justify-content-lg-between gap-1">
               <HexagonBox
                 source={require("../../../assets/images/homepage/react.svg")}
                 text="React"

@@ -7,6 +7,12 @@ import UpperBanner from "../../components/homepage/UpperBanner";
 import CrossFitContent from "../../components/homepage/CrossFitContent";
 import LowerBanner from "../../components/homepage/LowerBanner";
 import Footer from "../../components/common/Footer";
+import SkillPodsSection from "../../components/homepage/SkillPodsSection";
+import HomeProfileSection from "../../components/homepage/HomeProfileSection";
+import HomeCaroselSection from "../../components/homepage/HomeCaroselSection";
+import HomeOverdueSection from "../../components/homepage/HomeOverdueSection";
+import FormSection from "../../components/homepage/FormSection";
+import SocialMedeaPanel from "../../components/common/SocialMediaPanel";
 
 const Home = () => {
   return (
@@ -18,7 +24,14 @@ const Home = () => {
       <UpperBanner />
       <CrossFitContent />
       <LowerBanner />
-      {/* <Footer /> */}
+      <SkillPodsSection />
+      <HomeProfileSection />
+      <UpperBanner />
+      <HomeCaroselSection />
+      <HomeOverdueSection />
+      <FormSection />
+      <SocialMedeaPanel />
+      <Footer />
     </>
   );
 };

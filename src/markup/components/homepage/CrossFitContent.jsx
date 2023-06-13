@@ -6,7 +6,7 @@ const CrossFitContent = () => {
   return (
     <div className="bg_responsive_crossfit ">
       <div className="cross_fit_image">
-        <div className="container-sm container-fluid padding_container_c  ">
+        <div className="container-sm container-fluid padding_container_crossfit  ">
           <Row className="d-flex justify-content-between flex-lg-row flex-column-reverse">
             <Col lg={5} col={12} className="margin_bottom">
               <div className="d-flex align-items-center ">
