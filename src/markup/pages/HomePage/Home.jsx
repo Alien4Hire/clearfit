@@ -13,6 +13,8 @@ import HomeCaroselSection from "../../components/homepage/HomeCaroselSection";
 import HomeOverdueSection from "../../components/homepage/HomeOverdueSection";
 import FormSection from "../../components/homepage/FormSection";
 import SocialMedeaPanel from "../../components/common/SocialMediaPanel";
+import ContactUsSection from "../../components/homepage/ContactUsSection";
+import CopyRight from "../../components/common/CopyRight";
 
 const Home = () => {
   return (
@@ -30,8 +32,10 @@ const Home = () => {
       <HomeCaroselSection />
       <HomeOverdueSection />
       <FormSection />
+      <ContactUsSection />
       <SocialMedeaPanel />
       <Footer />
+      <CopyRight />
     </>
   );
 };
