@@ -154,7 +154,7 @@ class Router extends Component {
         <ScrollToTop>
           <div class="page-wrapper">
             <Switch>
-              <Route path="/" exact component={Index2} />
+              <Route path="/" exact component={Home} />
               <Route path="/about-us" exact component={AboutUS} />
               <Route path="/home" exact component={Home} />
               <Route path="/portfolio" exact component={Portfolio} />

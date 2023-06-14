@@ -14,6 +14,7 @@ const UpperBanner = () => {
             <div>
               <button
                 className="p-2 px-5 text-white fw-semibold text-uppercase letter-spacing-2"
+                onClick={() => window.location = "https://calendly.com/jaymaynard84/30-minute-live"}
                 style={{
                   background:
                     "linear-gradient(96.73deg, #C1292A 27.66%, #D0631A 85.99%)",
