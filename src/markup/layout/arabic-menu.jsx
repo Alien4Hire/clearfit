@@ -55,7 +55,7 @@ class ArabicMenu extends Component {
                         <li class="dropdown"><Link to={'/#'}>الصفحة الرئيسية  </Link>
                             <ul>
                                 <li><Link to={'/#'}>الصفحة الرئيسية 01 </Link></li>
-                                <li><Link to={'/index-2'}>الصفحة الرئيسية 02 </Link></li>
+                                <li><Link to={'/'}>الصفحة الرئيسية 02 </Link></li>
                                 <li><Link to={'/index-3'}>الصفحة الرئيسية 03 </Link></li>
                                 <li><Link to={'/index-4'}>الصفحة الرئيسية 04 </Link></li>
                                 <li><Link to={'/onepage'}>نسخة Onepage </Link></li>
@@ -63,7 +63,7 @@ class ArabicMenu extends Component {
                                 <li class="dropdown"><Link to={'/#'}>أنماط الرأس   </Link>
                                     <ul>
                                         <li><Link to={'/#'}>رأس نمط واحد </Link></li>
-                                        <li><Link to={'/index-2'}>نمط الرأس الثاني  </Link></li>
+                                        <li><Link to={'/'}>نمط الرأس الثاني  </Link></li>
                                         <li><Link to={'/index-3'}>رأس نمط ثلاثة  </Link></li>
                                         <li><Link to={'/index-4'}>رأس نمط أربعة  </Link></li>
                                     </ul>

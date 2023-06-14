@@ -81,7 +81,7 @@ class Header5 extends Component {
                                                 <li class="dropdown"><Link to={'/#'}>Pages</Link>
                                                     <ul>
                                                         <li><Link to={'/#'}>Home page 01</Link></li>
-                                                        <li><Link to={'/index-2'}>Home page 02</Link></li>
+                                                        <li><Link to={'/'}>Home page 02</Link></li>
                                                         <li><Link to={'/index-3'}>Home page 03</Link></li>
                                                         <li><Link to={'/index-4'}>Home page 04</Link></li>
                                                         <li><Link to={'/onepage'}>Onepage Version</Link></li>

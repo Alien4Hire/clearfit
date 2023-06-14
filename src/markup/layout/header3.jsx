@@ -79,7 +79,7 @@ class Header3 extends Component {
                                 <div class="nav-outer clearfix">
                                     {/* <!--Logo--> */}
                                     <div class="logo-box">
-                                        <div class="logo"><Link to={'/index-2'}><img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
+                                        <div class="logo"><Link to={'/'}><img src={require('../../assets/images/logo.png')} alt="" /></Link></div>
                                     </div>
                                     {/* <!--Sidemenu Navigation Toggler--> */}
                                     <div class="sidemenu-nav-toggler"><span class="icon fal fa-bars"></span></div>
@@ -114,7 +114,7 @@ class Header3 extends Component {
                         <div class="auto-container clearfix">
                             {/* <!--Logo--> */}
                             <div class="logo pull-left">
-                                <Link to={'/index-2'} title=""><img src={require('../../assets/images/footer-logo.png')} alt="" title="" /></Link>
+                                <Link to={'/'} title=""><img src={require('../../assets/images/footer-logo.png')} alt="" title="" /></Link>
                             </div>
                             {/* <!--Right Col--> */}
                             <div class="pull-right">
@@ -134,7 +134,7 @@ class Header3 extends Component {
                         <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
 
                         <nav class="menu-box">
-                            <div class="nav-logo"><Link to={'/index-2'}><img src={require('../../assets/images/logo.png')} alt="" title="" /></Link></div>
+                            <div class="nav-logo"><Link to={'/'}><img src={require('../../assets/images/logo.png')} alt="" title="" /></Link></div>
                             <div class="menu-outer">
                             <Menu />
                             </div>

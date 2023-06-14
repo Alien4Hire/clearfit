@@ -63,7 +63,7 @@ class Header4 extends Component {
                                     <li class="dropdown"><Link to={'/#'}>Home</Link>
                                         <ul>
                                             <li><Link to={'/#'}>Home page 01</Link></li>
-                                            <li><Link to={'/index-2'}>Home page 02</Link></li>
+                                            <li><Link to={'/'}>Home page 02</Link></li>
                                             <li><Link to={'/index-3'}>Home page 03</Link></li>
                                             <li><Link to={'/index-4'}>Home page 04</Link></li>
                                             <li><Link to={'/onepage'}>Onepage Version</Link></li>
@@ -71,7 +71,7 @@ class Header4 extends Component {
                                             <li class="dropdown"><Link to={'/#'}>Header Styles</Link>
                                                 <ul>
                                                     <li><Link to={'/index'}>Header Style One</Link></li>
-                                                    <li><Link to={'/index-2'}>Header Style Two</Link></li>
+                                                    <li><Link to={'/'}>Header Style Two</Link></li>
                                                     <li><Link to={'/index-3'}>Header Style Three</Link></li>
                                                     <li><Link to={'/index-4'}>Header Style Four</Link></li>
                                                 </ul>

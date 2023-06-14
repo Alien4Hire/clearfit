@@ -2,16 +2,46 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
   const links = [
-    "Home",
-    "About",
-    "Services",
-    "Portfolio",
-    "Pricing",
-    "Contact",
-    "News",
-    "Technologies",
-    "Case Study",
-    "Terms",
+    {
+      name: "Home",
+      ref: "/"
+    },
+    {
+      name: "About",
+      ref: "/about-us"
+    },
+    {
+      name: "Services",
+      ref: "/services-1"
+    },
+    {
+      name: "Portfolio",
+      ref: "/portfolio-1"
+    },
+    {
+      name: "Pricing",
+      ref: "/faq"
+    },
+    {
+      name: "Contact",
+      ref: "/contact"
+    },
+    {
+      name: "News",
+      ref: "/blog-standard"
+    },
+    {
+      name: "Technologies",
+      ref: "/services-1"
+    },
+    {
+      name: "Case Study",
+      ref: "/"
+    },
+    {
+      name: "Careers",
+      ref: "/careers"
+    }
   ];
   return (
     <div className="bg_primary_custom_color">
@@ -78,10 +108,10 @@ const Footer = () => {
                   return (
                     <a
                       className="links_width mb-3 text-white letter-spacing-1 text-uppercase"
-                      href="#"
+                      href={item.ref}
                       key={index}
                     >
-                      {item}
+                      {item.name}
                     </a>
                   );
                 })}

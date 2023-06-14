@@ -45,7 +45,7 @@ const details = [
     next: "Angels Eyewear",
   },
   {
-    image: require("../assets/images/resource/image-15.jpg"),
+    image: require("../assets/images/background/image-14.jpg"),
     name: "Angels Eyewear",
     date: "April 18, 2021",
     author: "Jason Maynard",
