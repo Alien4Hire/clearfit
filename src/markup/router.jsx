@@ -34,6 +34,7 @@ import consulting from "./pages/consulting";
 import AboutUS from "./pages/About-US/about-us";
 import Home from "./pages/HomePage/Home";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import PortfolioVersion2 from "./pages/Portfolio-v2/Portfolio-v2";
 
 const details = [
   {
@@ -158,6 +159,7 @@ class Router extends Component {
               <Route path="/about-us" exact component={AboutUS} />
               <Route path="/home" exact component={Home} />
               <Route path="/portfolio" exact component={Portfolio} />
+              <Route path="/portfolio-v2" exact component={PortfolioVersion2} />
               <Route path="/index-2" component={Index2} />
               <Route path="/index-3" component={Index3} />
               <Route path="/index-4" component={Index4} />
