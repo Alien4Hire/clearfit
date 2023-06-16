@@ -30,6 +30,8 @@ font-family: 'Roboto', sans-serif;
 @import url('shop.css');
 @import url('about-us/index.css');
 @import url('homepage/homepage.css');
+@import url('portfolio/portfolio.css');
+@import url('portfolio-v2/portfolio-v2.css');
 /*** 
 
 ====================================================================

@@ -1,0 +1,86 @@
+.portfolio_height {
+    height: 70px;  
+     border-bottom: 2px solid linear-gradient(90.01deg, #D0631A 29.51%, #C1292A 76.58%);;
+}
+.portfolio_content_height {
+    height: 40px;
+}
+
+.portfolio_border {
+    background:
+    linear-gradient(90.01deg, #D0631A 29.51%, #C1292A 76.58%)
+      left 
+      bottom 
+      #282828
+      no-repeat; 
+    background-size:100% 5px ;
+}
+
+.font-size-16 {
+    font-size: 16px;
+
+}
+.font-size-12 {
+    font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+    .font-size-16 {
+        font-size: 9px;
+    
+    }
+}
+
+.portfolio_cards {
+    max-width: 300px;
+    min-height: 320px;
+    margin-bottom: 14px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .portfolio_cards {
+        max-width: 100%;
+      
+    }
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container:hover .text-overlay {
+    opacity: 1;
+  }
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .text-overlay h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+
+
+  .color_primary {
+    color: #282828;
+  }
+
+  .after_content::before { 
+    content: "| ";
+    margin-right: 9px;
+  }
+
+  .bg_white_grey {
+    background: #F1F1F1;
+  }
