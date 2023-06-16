@@ -9,7 +9,7 @@ const OurClientSection = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     infinite: true,
     autoplaySpeed: 5000,
     cssEase: "linear",
@@ -29,7 +29,7 @@ const OurClientSection = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
         },
       },
       {
@@ -38,6 +38,7 @@ const OurClientSection = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          dots: true,
         },
       },
       {
@@ -56,7 +57,7 @@ const OurClientSection = () => {
         <Row className=" mx-auto">
           <Col className="text-black d-flex justify-content-between flex-lg-row flex-column ">
             <h1 className="text-center letter-spacing-3">Our Clients</h1>
-            <div className="slider_aboust_us about_us_slider_width px-2">
+            <div className="slider_aboust_us about_us_slider_width px-2 w-100">
               <Slider {...settings}>
                 <div>
                   <img

@@ -1,13 +1,16 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import PortfolioVTwoSliderCards from "../common/PortfolioVTwoSliderCards";
 import Slider from "react-slick";
-const DrawingSlider = () => {
+
+const PortfolioCardSlider = () => {
   var settings = {
     speed: 1000,
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     autoplaySpeed: 5000,
     cssEase: "linear",
@@ -58,27 +61,29 @@ const DrawingSlider = () => {
     ],
   };
   return (
-    <div className="d-block d-md-none w-100 drawing_slider ">
-      <Slider {...settings}>
-        <img
-          src={require("../../../assets/images/portfoliov2/first.png")}
-          alt="Not found"
-        />
-        <img
-          className="drwaing_images"
-          src={require("../../../assets/images/portfoliov2/first.png")}
-        />
-        <img
-          className="drwaing_images"
-          src={require("../../../assets/images/portfoliov2/fourth.png")}
-        />{" "}
-        <img
-          className="drwaing_images"
-          src={require("../../../assets/images/portfoliov2/fifth.png")}
-        />
-      </Slider>
+    <div className="silver_grey_background">
+      <div className="portfolio_v_bg home_overdue_padding ">
+        <Container>
+          <Row>
+            <Col>
+              <div className="d-flex justify-content-center flex-column  align-items-center ">
+                <h1 className="text-uppercase letter-spacing-2 py-2">
+                  RELATED PROJECTS
+                </h1>
+                <div className="w-100 portfolio_version_two_slider p-3">
+                  <Slider {...settings}>
+                    <PortfolioVTwoSliderCards />
+                    <PortfolioVTwoSliderCards />
+                    <PortfolioVTwoSliderCards />
+                  </Slider>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 };
 
-export default DrawingSlider;
+export default PortfolioCardSlider;

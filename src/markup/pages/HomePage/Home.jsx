@@ -15,11 +15,13 @@ import FormSection from "../../components/homepage/FormSection";
 import SocialMedeaPanel from "../../components/common/SocialMediaPanel";
 import ContactUsSection from "../../components/homepage/ContactUsSection";
 import CopyRight from "../../components/common/CopyRight";
+import Header from "../../components/common/Header";
 
 const Home = () => {
   return (
     <>
       <TopNavBar />
+      <Header />
       <HomeHeroSection />
       <HomeContentSection />
       <HomeCardsSection />
