@@ -95,7 +95,7 @@ const ProjectGalleryContent = () => {
           />
         </div>
       </div>
-      <div className="d-block d-lg-none w-100 ">
+      <div className="d-block d-lg-none w-100 project_gallery">
         <Slider {...settings}>
           <img
             src={require("../../../assets/images/portfoliov2/first.png")}

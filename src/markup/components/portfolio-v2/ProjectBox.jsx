@@ -12,7 +12,7 @@ const ProjectBox = () => {
     "Ipsum",
   ];
   return (
-    <div className="side_bar_wrapper">
+    <div className="side_bar_wrapper white_background">
       <div className="sidebar_header fw-bold text-white fs-30 d-flex justify-content-center p-1">
         <span className=" fs-20 letter-spacing-2 fw-normal text-uppercase">
           PROJECT SCOPE
